@@ -1,0 +1,46 @@
+{
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  },
+  "manifest_version": 2,
+  "name": "VZW WF",
+  "description": "VZW WF Chrome extension",
+  "version": "0.0.1",
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "commands": {
+    "toggle-feature": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+P",
+        "mac": "Command+Shift+P"
+      },
+      "description": "Toggle feature foo"
+    },
+    "_execute_browser_action": {
+      "suggested_key": {
+        "windows": "Ctrl+Shift+Y",
+        "mac": "Command+Shift+Y",
+        "chromeos": "Ctrl+Shift+U",
+        "linux": "Ctrl+Shift+J"
+      }
+    }
+  },
+  "browser_action": {
+    "default_popup": "index.html",
+    "default_title": "Open the popup"
+  },
+  "permissions": [
+    "proxy",
+    "tabs",
+    "unlimitedStorage",
+    "storage",
+    "webRequest",
+    "notifications",
+    "webRequestBlocking",
+    "https://wcms-nauth4.tdc.vzwcorp.com:8443/*"
+  ],
+  "content_security_policy": "script-src 'self' 'sha256-2HrDi8fSB6P0gfeLgPiwM18/KaRasXgx/fV7mqf1Aqc='; object-src 'self'"
+}
