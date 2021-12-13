@@ -1,0 +1,2 @@
+./startup.sh - run server
+catalina.out - see logs into java class important to know this

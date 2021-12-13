@@ -1,0 +1,3 @@
+mvn compile - compile my java class into the folder src main and .java 
+mvn clean 
+nvn package - generate source code as jar file (whatever we choose to build our source code .jar or .war)
