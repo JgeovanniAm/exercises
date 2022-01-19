@@ -1,8 +1,8 @@
 
 public class Jimmy {	
 	public static void main(String arg[]){
-		String greeks = "hello jimmy";
-		greeks = "value changed";
-		System.out.print("print from Main class" + "  " + greeks);
+		String jimmy  = "hello jimmy";
+		jimmy = "value changed";
+		System.out.print("print from Main class" + "  " + jimmy );
 	}
 }

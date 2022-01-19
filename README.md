@@ -1,1 +1,1 @@
-# jimmy-extra
+# exercises
