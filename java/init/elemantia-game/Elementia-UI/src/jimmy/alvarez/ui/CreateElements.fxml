@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="700.0" prefWidth="900.0" styleClass="create-tierra" stylesheets="@app.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="jimmy.alvarez.tl.CreateElemento">
+   <children>
+      <ImageView fitHeight="21.0" fitWidth="166.0" layoutX="29.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true" styleClass="title-img">
+         <image>
+            <Image url="@../assets/main/fontbolt-removebg-preview.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="72.0" fitWidth="479.0" layoutX="239.0" layoutY="136.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/main/fontbolt__2_-removebg-preview.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="name" layoutX="336.0" layoutY="265.0" promptText="Nombre Elemento" styleClass="inputs" />
+      <TextField fx:id="symbol" layoutX="336.0" layoutY="319.0" promptText="Simbolo" styleClass="inputs" />
+      <Button id="submit" fx:id="submit" layoutX="393.0" layoutY="608.0" mnemonicParsing="false" onAction="#createE" text="Submit" />
+      <Button layoutX="854.0" layoutY="-15.0" mnemonicParsing="false" onAction="#goToHomeKing" styleClass="back" text="x" />
+      <TextField fx:id="color" layoutX="336.0" layoutY="374.0" promptText="Color" styleClass="inputs" />
+      <TextField fx:id="atomNumber" layoutX="336.0" layoutY="428.0" promptText="Numero atomico" styleClass="inputs" />
+      <TextField fx:id="colorhex" layoutX="336.0" layoutY="480.0" promptText="Colo Hexadecimal" styleClass="inputs" />
+      <TextField fx:id="price" layoutX="336.0" layoutY="535.0" promptText="Precio" styleClass="inputs" />
+   </children>
+</AnchorPane>

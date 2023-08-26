@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="552.0" prefWidth="893.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="jimmy.alvarez.tl.RegisterMemberControllerView">
+    <children>
+        <Label layoutX="187.0" layoutY="99.0" text="Register Members" textAlignment="CENTER" textFill="#1f4626">
+            <font>
+                <Font name="Raanana" size="24.0" />
+            </font>
+        </Label>
+        <TextField fx:id="nombre" accessibleText="Name" layoutX="186.0" layoutY="146.0" promptText="Name" />
+        <TextField fx:id="apellido" accessibleText="Name" layoutX="187.0" layoutY="183.0" promptText="LastName" />
+        <TextField fx:id="direccion" accessibleText="Name" layoutX="189.0" layoutY="356.0" promptText="Address" />
+        <TextField fx:id="genero" accessibleText="Name" layoutX="191.0" layoutY="397.0" promptText="Gender" />
+        <Button layoutX="191.0" layoutY="440.0" mnemonicParsing="false" onAction="#postNewMember" text="Create" />
+      <TextField fx:id="contrasena" accessibleText="Name" layoutX="187.0" layoutY="223.0" promptText="Password" />
+      <TextField fx:id="correo" accessibleText="Name" layoutX="187.0" layoutY="265.0" promptText="Email" />
+      <DatePicker fx:id="fecha" layoutX="188.0" layoutY="310.0" prefHeight="24.0" prefWidth="159.0" promptText="Birthday" />
+        <Button layoutX="645.0" layoutY="103.0" mnemonicParsing="false" onAction="#homeLibraryView" text="Back" />
+
+    </children>
+</AnchorPane>
