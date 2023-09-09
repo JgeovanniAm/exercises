@@ -1,5 +1,0 @@
-type Query {
-    name: String!
-    lastName: String!
-    greets(who: String!): String!
-}

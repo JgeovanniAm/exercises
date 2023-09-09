@@ -8,10 +8,6 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 
-/**
- * @author j.alvarez.mendoza
- * @date 31/07/23
- */
 public class Main extends Application {
 
     public static void main(String[] args) {
