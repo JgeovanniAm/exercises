@@ -1,0 +1,138 @@
+.block{
+    width: 100%;
+}
+
+.tabsContent{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding:10px 0px 10px 0px;
+    box-shadow: 0px 0px 2px rgb(0, 156, 104) ;
+}
+
+.btn-ui{
+    width: 220px;
+    background: none;
+    border: 2px rgb(48, 46, 46) solid;
+    margin: 10px  50px 10px 50px;
+    padding: 10px 35px 10px 35px;
+    color: #ffff;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    &:hover{
+        box-shadow: 0px 0px 5px rgb(0, 156, 104) ;
+    }
+}
+
+.block__tabs{
+    display: flex;
+    box-shadow: 0px 0px 2px rgb(125, 173, 157) ;
+    justify-content: center;
+}
+
+.import{
+    display: none;
+}
+
+.form{
+    width: 100%;
+    label{
+        color:white ;
+        font-size: 14px;
+        letter-spacing: 2px;
+    }
+    input{
+        padding: 10px;
+        color:rgb(0, 156, 104) ;
+        background: none;
+        border: 0;
+        border-bottom: 1px rgb(0, 156, 104) solid;
+    }
+    .btn-save{
+        margin: 30px;
+        cursor: pointer;
+        padding: 10px 20px 10px 20px;
+        color:rgb(0, 156, 104) ;
+        background: none;
+        border: 1px rgb(0, 156, 104) solid;
+    }
+}
+
+.main-content{
+    padding:10px 0px 10px 0px;
+    display: block;
+}
+
+.commands{
+    display: flex;
+    justify-content: center;
+    padding:10px 0px 10px 0px;
+}
+
+.order-songs{
+    color: #fff;
+    border: 0;
+    margin: 10px  50px 10px 50px;
+    width: 230px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    border: 0;
+    border-bottom: 2px rgb(48, 46, 46) solid;
+    background: none;
+    outline: none;
+    &:hover{
+        box-shadow: 0px 0px 5px rgb(0, 156, 104) ;
+    }
+}
+
+.order-songs option{
+    color: #fff;
+    background-color: black;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    outline: none;
+}
+
+.search-ui{
+    color: #fff;
+    border: 0;
+    margin: 10px  50px 10px 50px;
+    width: 230px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    border: 0;
+    border-bottom: 2px rgb(48, 46, 46) solid;
+    background: none;
+    outline: none;
+    &:hover{
+        box-shadow: 0px 0px 5px rgb(0, 156, 104) ;
+    }
+}
+
+.blockCommands{
+    width: 50%;
+    margin: 0 auto;
+    margin-top :20px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    padding: 20px 20px;
+    opacity: 0.1;
+}
+
+.buttons-block{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 50px;
+}
+
+.buttons-block button{
+    padding: 20px 20px 20px 20px;
+    background: none;
+    border:0px;
+    color: rgb(0, 156, 104) ;
+    font-size: 25px;
+    margin:5px 40px 0px 40px;
+    cursor: pointer;
+}

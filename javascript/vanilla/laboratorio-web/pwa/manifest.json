@@ -1,0 +1,19 @@
+{
+    "short_name": "MY first pwa",
+    "name": "hi!",
+    "start_url": "./index.html",
+    "display": "standalone",
+    "orientation": "portrait",
+    "icons": [
+        {
+            "src": "img/background1.png",
+            "sizes": "300x320",
+            "type": "image/png"
+        },
+        {
+            "src": "img/tour.jpg",
+            "sizes": "630x354",
+            "type": "image/jpg"
+        }
+    ]
+}

@@ -1,0 +1,14 @@
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.wrapper-form {
+  margin: 0 auto;
+  width: 50%;
+}
+
+.wrapper-form input {
+  margin: 5px;
+  padding: 5px;
+}

@@ -1,0 +1,137 @@
+body {
+  color: white;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0;
+  background-image: url("../img/manoblanco.png");
+  background-size: 550px;
+  background-position: center 70%;
+  background-repeat: no-repeat; }
+
+.settings {
+  margin-top: 20px; }
+  .settings button {
+    background: #f0f0f0;
+    font-weight: bold;
+    align-items: flex-start;
+    text-align: center;
+    box-sizing: border-box;
+    border-width: 0.5px;
+    border-style: outset;
+    border-image: initial;
+    color: #0498ac;
+    display: inline;
+    font-size: 18px;
+    margin: 10px 10px 10px 10px;
+    outline: none;
+    cursor: pointer; }
+    .settings button:hover {
+      background: #0498ac;
+      color: whitesmoke; }
+
+.title {
+  color: #0498ac;
+  margin: 0;
+  display: block;
+  opacity: 0.7; }
+  .title::before {
+    content: "";
+    background-image: url("../img/logo.png");
+    display: inline-block;
+    height: 100px;
+    width: 100px;
+    background-position: center center;
+    background-size: 100px;
+    margin-right: 20px;
+    position: relative;
+    top: 50px; }
+
+.block {
+  padding: 0% 5% 5% 10%; }
+
+.wraper {
+  display: flex; }
+
+.wraper-table {
+  display: block;
+  overflow: scroll;
+  height: 60vh; }
+  .wraper-table tr {
+    display: inline-flex; }
+    .wraper-table tr div {
+      padding: 10px 20px;
+      color: black;
+      text-align: center;
+      border: 0.1px solid rgba(56, 56, 56, 0.349);
+      outline: none; }
+
+.block-controls {
+  display: flex;
+  margin: 25px 25px; }
+  .block-controls button {
+    background: #f0f0f0;
+    font-weight: bold;
+    align-items: flex-start;
+    text-align: center;
+    box-sizing: border-box;
+    border-width: 0.5px;
+    border-style: outset;
+    border-image: initial;
+    color: #0498ac;
+    display: inline;
+    font-size: 18px;
+    margin: 10px 10px 10px 10px;
+    outline: none;
+    cursor: pointer; }
+    .block-controls button:hover {
+      background: #0498ac;
+      color: whitesmoke; }
+
+.row {
+  width: 60px;
+  margin: 0.5px 0px 0.5px 0px;
+  background: transparent; }
+
+.btn-column,
+.btn-row {
+  background: rgba(180, 180, 180, 0.349);
+  color: #0498ac;
+  font-size: 2.4rem;
+  font-weight: bold;
+  padding: 5px 20px;
+  margin-left: 10px;
+  outline: none; }
+
+.messageDialog,
+.titleDialog {
+  font-weight: bold;
+  color: white; }
+
+.dialogPage {
+  width: 400px;
+  background: rgba(4, 153, 172, 0.392);
+  border: 2px #0498ac solid;
+  position: absolute;
+  top: 40%;
+  right: 0;
+  left: 0; }
+  .dialogPage button {
+    background: #f0f0f0;
+    font-weight: bold;
+    align-items: flex-start;
+    text-align: center;
+    box-sizing: border-box;
+    border-width: 0.5px;
+    border-style: outset;
+    border-image: initial;
+    color: #0498ac;
+    display: inline;
+    font-size: 18px;
+    margin: 10px 10px 10px 10px;
+    outline: none;
+    cursor: pointer; }
+    .dialogPage button:hover {
+      background: #0498ac;
+      color: whitesmoke; }
+
+/*# sourceMappingURL=styles.css.map */

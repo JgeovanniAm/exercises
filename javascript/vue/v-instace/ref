@@ -1,0 +1,17 @@
+ref in vue js
+
+input v-bind-class ref="input"
+button v-on:click={readRef}
+div {call} div
+
+
+new Vue {
+  data: {
+    call: ""
+  }
+  methods: {
+    readRef: function(){
+      this.$refs // call all my refs
+      this.call = this.$refs.input.value    }
+  }
+}

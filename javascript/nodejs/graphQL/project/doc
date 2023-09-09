@@ -1,0 +1,129 @@
+https://mariusschulz.com/blog/importing-json-modules-in-typescript
+
+https://atheros.ai/blog/graphql-interfaces-and-unions-how-to-design-graphql-schema
+
+<<<< INTERFACES >>>>
+
+Las interfaces no se usan para almacenar datos, como es el caso de los tipos de objeto (Type Object), es para definir la estructura de un tipo de objeto, es decir, para "imponer" unas normas que deberá de cumplir un objeto o varios.
+
+Te pongo un ejemplo, yo suelo usar muchas veces para las respuestas la misma estructura:
+
+type ResultadoUsuarios {
+    status: Boolean!
+    message: String!
+    users: [User!]!
+}
+ 
+type ResultadoUsuario {
+    status: Boolean!
+    message: String!
+    user: User!
+}
+Si te fijas, en los dos uso dos propiedades en común, que son status y message, que quiero que sean obligatorias en todos mis objetos que va a usarse para devolver. Para obligar por contrato a tener que añadir esos datos en el tipo de objeto Resultado<Información de lo que se deolverá>, utilizamos las interfaces, y definimos algo de este estilo:
+
+interface ResultOperation {
+    status: Boolean!
+    message: String!
+}
+Ahora teniendo esa "regla" definida, lo primero vamos al fichero index.ts, donde construyes el ejecutable del Schema junto con el type definitions y el apartado de los resolvers y añades lo siguiente, con el objetivo de quitar esa advertencia:
+
+const schema: GraphQLSchema = makeExecutableSchema({
+    typeDefs,
+    resolvers,
+    resolverValidationOptions: { <==== ESTO ES LO QUE TIENES QUE AÑADIR
+        requireResolversForResolveType: false,
+    }
+});
+Una vez que tenemos añadida esa configuración, esa advertencia debería de desaparecer. Si te fijas, el propio mensaje te lo dice.
+
+Ahora que ya tienes eso, para establecer e implementar los interfaces en los tipos de objeto y así obligar a que tengan esas propiedades si o si, deberíamos de hacer un "implements ResultOperation" en cada tipo de objeto.
+
+type ResultadoUsuarios implements ResultOperation{
+    status: Boolean!
+    message: String!
+    users: [User!]!
+}
+ 
+type ResultadoUsuario implements ResultOperation{
+    status: Boolean!
+    message: String!
+    users: User!
+}
+Así nos aseguramos que esos tipos de objeto tienen esas dos propiedades que se han especificado como obligatorias.
+
+Imaginate que creamos otro tipo de objeto, implementando el ResultOperation como interface, pero imaginate que no añades la propiedad "message":
+
+type ResultadoProducts implements ResultOperation {
+    status: Boolean!
+    products: [Product!]!
+}
+Ahora si guardas, en la consola donde ejecutas el servidor, te aparecerá un error de este estilo:
+
+(node:1157) UnhandledPromiseRejectionWarning: Error: Interface field ResultOperation.message expected but ResultadoProducts does not provide it.
+
+Si añadimos "message", esta advertencia desaparecerá.
+
+Eso es el uso que le damos a la interface.
+
+Recuerda:
+
+Type object = Tipo de objeto : Trabajar / almacenar con información.
+
+Interface: Para establecer unas normas que se van a aplicar en los tipos de objeto en el que se implemente, para evitar no olvidarse de información importante de cara al desarrollo de nuestra API
+Te recomiendo, que los objetos estudiantes, curso,...los pongas como tipo de objetos, como explico y que juegues quizás con los resultados, estableciendo interfaces, como acabo de explicarlo.
+Saludos ;)
+
+<<<<<<<< MUTATION  >>>>>>>>>
+
+mutation newCourse($course : CourseInput!) {
+    newCourse(course: $course){
+      id
+      title
+      class
+  	}
+}
+
+query variables 
+    {
+        "course": {
+                "id": "1",
+                "title": "Compodoc: Crea documentación en proyectos Angular/Ionic/TS",
+                "description": "Crear documentación de calidad y MUY fácil de mantener con Compodoc para proyectos de Angular 2+ / Ionic 2+ / Typescript",
+                "class": 73,
+                "time": 3.5,
+                "level": "EVERYBODY",
+                "logo": "https://i.udemycdn.com/course/240x135/1777518_b681_6.jpg",
+                "path": "/compodoc-crea-documentacion-en-angular-ionic",
+                "teacher": "Anartz Mugika Ledo"
+        }
+    }
+
+<<<<<<<< QUERY  >>>>>>>>>
+
+query getIdstudent($id : id!) {
+    studentId(id: $id){
+      id
+      title
+      class
+  	}
+}
+
+// query variables 
+
+    {
+        "id": {
+                "id": "1",
+                "title": "Compodoc: Crea documentación en proyectos Angular/Ionic/TS",
+                "description": "Crear documentación de calidad y MUY fácil de mantener con Compodoc para proyectos de Angular 2+ / Ionic 2+ / Typescript",
+                "class": 73,
+                "time": 3.5,
+                "level": "EVERYBODY",
+                "logo": "https://i.udemycdn.com/course/240x135/1777518_b681_6.jpg",
+                "path": "/compodoc-crea-documentacion-en-angular-ionic",
+                "teacher": "Anartz Mugika Ledo"
+        }
+    }
+
+<<<< DataSource >>>>>
+
+DataSource will allow us trasnform our endpoint rest to graphql

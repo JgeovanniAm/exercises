@@ -1,0 +1,22 @@
+<div class="form-wrapper">
+  <form #taskForm="ngForm" (ngSubmit)="handleSubmit(taskForm)">
+    <div class="form-group">
+      <label for="title">title</label>
+      <input #title="ngModel" required [ngModel] [class.is-invalid]="title.touched && title.invalid" name="title" type="text" class="form-control" id="title" placeholder="title">
+    </div>
+    <div class="form-group">
+      <label for="name">name</label>
+      <input #name="ngModel" required [ngModel] [class.is-invalid]="name.touched && name.invalid" name="name"  type="text" class="form-control" id="name" placeholder="name">
+    </div>
+    <div class="form-group">
+      <label for="description">description</label>
+      <textarea #description="ngModel" required [ngModel] [class.is-invalid]="description.touched && description.invalid"  name="description" class="form-control" id="description" rows="3"></textarea>
+    </div>
+    <div class="form-group">
+      <label for="file">Example file input</label>
+      <input required [ngModel] name="file" type="file" class="form-control-file" id="file">
+    </div>
+    <button type="submit">create</button>
+  </form>
+  <app-modal [validate]="validate" (closeModalEventEmit)="closeModal($event)"></app-modal>
+</div>

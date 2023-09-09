@@ -1,0 +1,26 @@
+{
+    "short_name": "TriviasWEb",
+    "name": "TriviasWEb",
+    "icons": [
+        {
+            "src": "imagenes/question.png",
+            "sizes": "64x64",
+            "type": "image/png"
+        },
+        {
+            "src": "imagenes/light1.png",
+            "sizes": "325x423",
+            "type": "image/png"
+        },
+        {
+            "src": "imagines/information.png",
+            "sizes": "64x64",
+            "type": "image/png"
+        }
+    ],
+    "start_url": "./index.html",
+    "display": "standalone",
+    "theme_color": "#1c5555",
+    "orientation": "portrait",
+    "background_color": "#1c5555"
+}

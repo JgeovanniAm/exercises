@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="/css/styles.css">
+    <title>ImageWebeServerJimmy</title>
+</head>
+<body>
+    <div class="wrapper-form">
+        <form action="/img" enctype="multipart/form-data" method="post">
+            <div>
+                <input type="file" name="upload" required>
+            </div>
+            <div>
+                <input id="btn" type="submit" value="subir archivo">
+            </div>
+        </form>
+    </div>
+    <div class="wrapper-List">
+        <input type="text" class="btnId" placeholder="escriba el id a borrar">
+        <input type="button" id="btnRemove" value="remove">
+        <form class="form">
+            <input type="text" class="btnIdDownload" placeholder="id para descargar img ">
+            <input type="submit" id="download" value="download">
+            <ul class="list-images"></ul>
+        </form>
+    </div>
+    <script src="js/render.js"></script>
+    <script src="js/delete.js"></script>
+    <script src="js/download.js"></script>
+</body>
+</html>

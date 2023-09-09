@@ -1,0 +1,24 @@
+
+new Vue {
+  el: #myIdhtml,
+  data: {
+    age: 10,
+  }
+
+  methods:{
+    increment: function(num){
+      this.age += num
+    }
+  }
+}
+
+.once va solo se a hacer un evento una sola vez
+.prevent
+.keyup = onchage react
+.enter
+
+<div id="myIdhtml"> 
+  <button v-on:click.once="increment(1)"> increment<button/>
+  <button @click="increment(10)"> increment 10 <button/>
+  <p>{{age}}</p>
+</div>

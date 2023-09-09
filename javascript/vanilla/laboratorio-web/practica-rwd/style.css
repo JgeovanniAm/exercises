@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans:400,400i,700&display=swap");
+* {
+  box-sizing: border-box; }
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", sans-serif; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: Montserrat, sans-serif;
+  font-weight: 700; }
+
+img {
+  max-width: 100%;
+  height: auto; }
+
+label {
+  display: block;
+  font-weight: 700;
+  margin-bottom: 5px; }
+
+label::after {
+  content: ":"; }
+
+input[type="text"], textarea {
+  width: 100%;
+  padding: 5px; }
+
+input[type="submit"] {
+  padding: 5px 15px;
+  background-color: #ccc;
+  font-weight: 700; }
+
+.site-header {
+  background-color: #ccc;
+  padding: 20px; }
+
+.services {
+  padding: 20px; }
+
+.services__inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px; }
+  @media screen and (min-width: 720px) {
+    .services__inner {
+      margin: 0 auto;
+      width: 75%;
+      grid-gap: 60px; } }
+
+.services__title {
+  grid-column: 1 / span 2; }
+  @media screen and (min-width: 720px) {
+    .services__title {
+      font-size: 2rem; } }
+
+.services h3 {
+  margin: 0; }
+  @media screen and (min-width: 720px) {
+    .services h3 {
+      font-size: 2rem; } }
+
+.services img {
+  justify-self: center; }
+
+.testimonials__inner {
+  padding: 20px;
+  background-color: #eee; }
+  @media screen and (min-width: 720px) {
+    .testimonials__inner {
+      padding: 5% 15%; } }
+
+.testimonial {
+  margin: 0;
+  font-style: italic;
+  margin-bottom: 30px; }
+
+@media screen and (min-width: 720px) {
+  .testimonial {
+    font-size: 1.4rem; } }
+
+@media screen and (min-width: 720px) {
+  .testimonials__inner h2 {
+    font-size: 2rem; } }
+
+.testimonial__person {
+  font-style: normal;
+  margin-top: 10px; }
+
+.testimonial__person img {
+  max-width: 50px;
+  vertical-align: middle;
+  margin-right: 10px; }
+  @media screen and (min-width: 900px) {
+    .testimonial__person img {
+      max-width: 100%; } }
+
+.contact__inner {
+  padding: 20px; }
+  @media screen and (min-width: 900px) {
+    .contact__inner {
+      margin: 0 auto;
+      width: 60%;
+      font-size: 1.5rem; } }
+  @media screen and (min-width: 720px) {
+    .contact__inner {
+      margin: 0 auto;
+      width: 50%; } }
+
+.contact__item {
+  margin-bottom: 20px; }
+
+/*# sourceMappingURL=style.css.map */

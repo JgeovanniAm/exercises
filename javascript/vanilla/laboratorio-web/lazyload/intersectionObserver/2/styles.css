@@ -1,0 +1,17 @@
+#wrapper{
+    background: purple;
+    width: 500px;
+    height: 300px;
+    overflow: auto;
+}
+#wrapper div{
+    background: rosybrown;
+    width: 90%;
+    margin: 10px;
+    height: 150px; 
+    transition: 1.5s ease-in-out;
+}
+
+#wrapper div.show{
+    background: rgb(152, 188, 143);
+}

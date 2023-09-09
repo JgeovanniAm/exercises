@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content='width=device-width, initial-scale=0.66, maximum-scale=0.66, user-scalable=0'>
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
+  <title>Javascript jimmy </title>
+</head>
+<body>
+  <div id="portada">
+    <div id="titulo">
+      <h1>Shao-kahn</h1>
+    </div>
+    <div id="comando">
+      <div id="boton">
+        <p>START</p>
+      </div>
+    </div>
+    <div id="footer">
+      <a href=""><p>Jimmy Alvarez</p></a>
+    </div>
+  </div>
+  <div id="puntajealperder">
+      <div id="patallascore">
+          <h1 id="title">Game Over</h1>
+          <div id="score" >
+            <h1>Score</h1> 
+            <p id="scorePlayer">100</p>
+          </div>
+          <div id="GameOverBton">
+            <p>play again</p>
+          </div>
+      </div>
+  </div>
+  <div id="divmarcadorscore">
+    <p>Score:</p>
+    <p id="marcadorscore">0</p>
+  </div>
+  <div id="instrucciones">
+    <div>
+      <p></p>
+    </div>
+  </div>
+
+  <canvas id="canvasArea" class="contentOverlay"></canvas>
+  <button class="btns btnL" id="leftBtn">L</button>
+  <button class="btns btnR" id="rightBtn">R</button>
+
+  <script src="js/character.js"></script>
+  <script src="js/backgroundcover.js"></script>
+  <script src="js/p5.js/p5.min.js"></script>
+</body>
+</html>

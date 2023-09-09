@@ -1,0 +1,13 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  background: rgba(201, 0, 0, 0.171);
+  height: 100vh;
+  padding: 50px;
+}
+
+.wrapper button{
+  padding: 5px;
+  margin-bottom: 10px;
+}

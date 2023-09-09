@@ -1,0 +1,13 @@
+body {
+  margin: 0;
+  background: black;
+  color: white;
+}
+
+.app {
+  display: flex;
+}
+
+.content {
+  width: 100%;
+}

@@ -1,0 +1,11 @@
+.card-death {
+  border: 1px black solid;
+  margin: 20px;
+  padding: 10px;
+  width: 400px;
+}
+
+.card-death h2 {
+  color: rgb(0, 87, 0);
+  font-family: 'Courier New', Courier, monospace;
+}

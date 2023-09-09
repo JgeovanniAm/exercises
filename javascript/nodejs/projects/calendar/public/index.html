@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Calendar Jimmy</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="config">
+        <div>
+            <h4>Agregar Nuveos eventos</h4>
+            <form>
+                <label for="">day</label>
+                <input type="number" class="postDay">
+                <br>
+                <label for="">month</label>
+                <input type="text" placeholder="escriba el mes" class="postMonth">
+                <br>
+                <label for="">year</label>
+                <input type="number" class="postYear">
+                <br>
+                <label for="">text</label>
+                <textarea class="text" id="" cols="30" rows="10"></textarea>
+                <br>
+                <input class="enviar" value="enviar" type="button">
+            </form>
+        </div>
+        <div>
+            <h4>Eliminar evento </h4>
+                day
+                <input type="number" class="updateDay">
+                <br>
+                month
+                <input type="text" placeholder="escriba el mes" class="updateMonth">
+                <br>
+                year
+                <input type="number" class="updateYear">
+                <br>
+                text
+                <textarea class="updatetext" id="" cols="30" rows="10"></textarea>
+                <br>
+                <input class="update" value="eliminar" type="button">
+        </div>
+    </div>
+    <br>
+    <br>
+    <div id="wrapper">
+        <div class="Calendar">
+            <button class="previous">
+                <</button>
+                    <h1 class="month"></h1>
+                    <h2 class="year"></h2>
+                    <button class="next">></button>
+        </div>
+        <div class="week">
+            <div class="day">lunes</div>
+            <div class="day">martes</div>
+            <div class="day">miercoles</div>
+            <div class="day">jueves</div>
+            <div class="day">viernes</div>
+            <div class="day">sábado</div>
+            <div class="day">domingo</div>
+        </div>
+        <div class="dates--days">
+        </div>
+    </div>
+    <br>
+    <br>
+    <div class="panel--control">
+        <h4>Eventos para hoy</h4>
+        <button class="eventsToday">events</button>
+        <br>
+        <h4>verificar fechas proximas</h4>
+        <input type="number" class="dayinput" placeholder="numberday" id="">
+        <input type="number" class="monthinput" placeholder="numbermonth" id="">
+        <input type="number" class="yearinput" placeholder="numberyear" id="">
+        <button class="eventsDate">fechas proximas</button>
+    </div>
+    <script src="js/api.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/events.js"></script>
+    <script src="js/currentEvent.js"></script>
+    <script src="js/dateevent.js"></script>
+    <script src="js/newEvents.js"></script>
+    <script src="js/deleteEvent.js"></script>
+</body>
+</html>

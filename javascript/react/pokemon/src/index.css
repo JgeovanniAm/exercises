@@ -1,0 +1,27 @@
+body {
+  margin: 0;
+  background: black;
+  color: white;
+}
+
+#root {
+  columns: 3;
+}
+
+img {
+  margin:  30px;
+}
+
+.info {
+  background: black;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+}
+
+.btn-favorite {
+  position: fixed;
+  top: 10%;
+}

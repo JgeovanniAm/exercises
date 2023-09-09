@@ -1,0 +1,19 @@
+.card-Portrayer  {
+    width: 300px;
+
+}
+
+.card-Portrayer {
+    margin: auto;
+    padding: 20px;
+    transition: 1s;
+    width: 200px;
+}
+
+.card-Portrayer:hover {
+    box-shadow: 2px 2px 10px black;
+}
+
+.card-Portrayer__img {
+    max-width: 80%;
+}

@@ -1,0 +1,103 @@
+.body {
+    -fx-background-color: #003566;
+    -fx-padding: 20px;
+}
+.home {
+    -fx-background-color: #370056;
+}
+.title-img {
+    -fx-z-order: 2
+}
+
+.create-tierra,
+.signup-container,
+.signin-container{
+    -fx-background-color: #001D3D;
+}
+
+.home .text-perfil {
+    -fx-font-size: 14px;
+    -fx-text-fill: #bcfae7;
+}
+
+.homeKing-create {
+    -fx-min-width: 300px;
+    -fx-padding: 28px 36px;
+    -fx-font-size: 28px;
+    -fx-background-color: rgb(217, 180, 43);
+    -fx-text-fill: #D9FFFF;
+    -fx-font-weight: 700;
+    -fx-border-radius: 44px;
+}
+
+.tierra .back,
+.create-tierra .back,
+.home .back,
+.signup-container .back,
+.signin-container .back {
+    -fx-background-color: transparent;
+    -fx-text-fill: red;
+    -fx-font-size: 32px;
+}
+
+.create-tierra .inputs,
+.signup-container .inputs ,
+.signin-container .inputs {
+    -fx-min-width: 240px;
+    -fx-padding: 10px 20px;
+    -fx-prompt-text-fill: white;
+    -fx-text-fill: rgb(217, 180, 43);
+    -fx-background-color: transparent;
+    -fx-border-color: white;
+    -fx-border-radius: 28px;
+}
+
+/*.tierrasImg {*/
+/*    -fx-background-color: white;*/
+/*}*/
+.create-tierra .inputs .select {
+    -fx-text-fill: white;
+}
+
+.create-tierra #submit,
+.signup-container #submit,
+.signin-container #submit {
+    -fx-padding: 10px 44px;
+    -fx-text-fill: white;
+    -fx-background-color: transparent;
+    -fx-border-color: white;
+    -fx-border-radius: 28px;
+}
+
+.signin {
+    -fx-min-width: 300px;
+    -fx-padding: 28px 36px;
+    -fx-font-size: 28px;
+    -fx-background-color: rgb(217, 180, 43);
+    -fx-text-fill: #D9FFFF;
+    -fx-font-weight: 700;
+    -fx-border-radius: 44px;
+}
+.signup{
+    -fx-min-width: 300px;
+    -fx-padding: 28px 36px;
+    -fx-font-size: 28px;
+    -fx-background-color: rgb(217, 180, 43);
+    -fx-text-fill: #D9FFFF;
+    -fx-font-weight: 700;
+}
+
+.tierra {
+    -fx-background-color: #fffad9;
+}
+
+.text-tierra {
+    -fx-text-fill: rgb(217, 180, 43) !important;
+}
+
+.create-yacimientos {
+    -fx-background-color: #1e006b;
+    -fx-text-fill: #D9FFFF;
+    -fx-font-size: 28px;
+    -fx-padding: 10px 32px;
+}

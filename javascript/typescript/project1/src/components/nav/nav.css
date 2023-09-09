@@ -1,0 +1,18 @@
+.nav-component {
+    width: 100%;
+    padding: 5px;
+    background: #005c1c;
+}
+
+.nav-component__list {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.nav-component__item {
+    margin: 10px 20px;
+}
+
+.nav-component__item a {
+    color: white;
+}

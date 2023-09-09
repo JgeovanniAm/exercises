@@ -1,0 +1,33 @@
+body{
+    margin: 0;
+    padding:0;
+}
+.header{
+    background: rgb(252, 168, 182);
+    height: 100vh;
+    padding: 80px;
+}
+.title-main{
+    color: rgb(96, 248, 240);
+    margin: 0;
+    text-align: center;
+    font-size: 8rem;
+    text-shadow: 10px 10px 20px rgb(96, 248, 240);
+    margin-bottom: 20%;
+    text-transform: uppercase;
+}
+.list-ui{
+    display: block;
+    margin:0 auto;
+    padding: 0;
+    width: 50%;
+    list-style: none;
+}
+.list-ui li{
+    color: rgb(96, 248, 240);
+    font-size: 4rem;
+    margin: 0;
+    text-align: center;
+    text-shadow: 10px 10px 20px rgb(96, 248, 240);
+    text-transform: uppercase;
+}

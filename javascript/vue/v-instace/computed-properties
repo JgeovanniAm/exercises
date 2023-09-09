@@ -1,0 +1,26 @@
+// method {{message()}}
+// computed props {{reversedMessage}} whitout ===> ()
+
+<div id="example">
+  <p>Original message: "{{ message }}"</p>
+  <p>Computed reversed message: "{{ reversedMessage }}"</p>
+</div>
+
+var vm = new Vue({
+  el: '#example',
+  data: {
+    message: 'Hello'
+  },
+
+  computed: {
+    // un getter computado
+    reversedMessage: function () {
+      return this.message.split('').reverse().join('')
+    }
+  }
+})
+
+
+1.computed properties: We are supposed to use 'this computed prop' when we deal with only the properties in 'data' object, such as 'age', 'a', 'b' in the video. We don't need to have parenthesis '()' in the '{{ addToA }}' or '{{ addToB }}' because we don't need any arguments from outside. We are only computing the values of properties 'within' the data object.
+2. methods: methods are different from computed properties in that methods always need an direct action from a user, that is, an event. But computed properties run without the direct action from a users. They run indirectly only after the direct action from a user.
+3. In short, methods are need to deal with information 'outside' data while computed props are need to deal with information 'inside' data.

@@ -1,0 +1,18 @@
+type data
+
+  primitive
+    string
+    number
+    null
+    undifined
+    boolean
+
+  literals
+    object literals
+    function
+    class
+
+types whit tS 
+  create new types 
+  interface
+  type gene

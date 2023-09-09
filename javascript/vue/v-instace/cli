@@ -1,0 +1,7 @@
+npm i -g vue-cli
+
+// template
+webpack simple project
+
+vue init webpack-simple "vuenameproject"
+

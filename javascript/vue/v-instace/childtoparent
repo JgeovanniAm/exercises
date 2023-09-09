@@ -1,0 +1,41 @@
+this.$emit("changeTitle","mi hijo me modificó");
+
+v-on:changeTitle="updateTitle($event)"
+
+methods: {
+    updateTitle: function(update){
+      this.msg = update
+      console.log(update)
+    },
+  },
+
+// bus
+ bus.$emit('messageChaged', 'perro');
+
+ bus.$on('messageChaged', (data)=> {
+      this.msg = data
+    })
+
+
+
+//
+
+To communicate between children you need to use a global event hub. It can be easily done using Vue itself. In your app.js just add this:
+
+const bus = new Vue();
+Now in any other JS file you can $emit events and listen to them in other components. For example, If Child A wants to let Child B know that something happened, it will emit an event which Child B will respond to:
+
+// A.vue
+// ...
+doSomething() {
+    // do the job
+
+    bus.$emit('did-something', data);
+}
+
+// B.vue
+// ...
+
+created() {
+    bus.$on('did-something', data => this.someData = data);
+}

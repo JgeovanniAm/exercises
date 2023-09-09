@@ -1,0 +1,19 @@
+My instance 
+<-data-> is a object that recive objects here i can .
+
+new Vue {
+  el: #myIdhtml,
+  data: {
+    name: jimmy,
+  }
+  methods: {
+    goodmornig: function(time){
+      return time + this.name
+    }
+  }
+}
+
+In my html you can use its instace.
+
+<div> {{ name }} </div>
+<div> {{ goodmornig('hola) }} </div>

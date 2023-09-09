@@ -1,0 +1,31 @@
+It is like a children props in React
+example:
+// parent 
+  div blablabla
+  div blablabla
+  <ButtonComponent>
+      <span>Send/span> // child element
+  </ButtonComponent>
+
+ // ButtonComponent
+
+  <button>
+    <slot> </slot> // this is my span element
+  <button>
+
+example 2:
+
+// parent 
+  div blablabla
+  div blablabla
+  <ButtonComponent>
+      <span slot="second">down/span> // child element
+      <span slot="first">over/span>
+  </ButtonComponent>
+
+ // ButtonComponent
+
+  <button>
+    <slot name="first"> </slot> // this is my span element
+    <slot name="second"> </slot>
+  <button>

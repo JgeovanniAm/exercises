@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>TriviasWeb</title>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Rubik+Mono+One&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="manifest" href="./manifest.json" />
+</head>
+<body>
+  <div class="loader">
+    <div class="wrapper-logo">
+      <img src="imagenes/question.png" alt="logo TrivialWeb">
+    </div>
+    <div class="members">
+      <h2 class="members__title">Nycoll Soto Morales</h2>
+      <h2 class="members__title">Jimmy Alvarez Mendoza</h1>
+    </div>
+  </div>
+  <div class="container">
+    <img src="imagenes/001-think.png" class="img-decoration" alt="">
+    <h1 class="container__title">Trivia Web</h1>
+    <img src="imagenes/yeti.png" class='img-decoration2' alt="">
+    <section class="wrapper-register">
+      <button class="sign-in btn-ui">sign-in</button>
+      <button class="sign-up btn-ui">sign-up</button>
+    </section>
+  </div>
+  <script async src="js/register.js"></script>
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('./sw.js');
+      });
+    }</script>
+</body>
+
+</html>

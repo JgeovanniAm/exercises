@@ -1,0 +1,9 @@
+if you want to init a project whit TS you can run:
+"tsc -init"
+this command is going to create a file .json type to your typescript
+in this file you can configurate many things of how you need that your fails typescript compiler
+
+------------------------------------------------------------------------------
+
+the command: "tsc *.ts -w" 
+is going to compiler all your file typescript and it will create files with the same name .json

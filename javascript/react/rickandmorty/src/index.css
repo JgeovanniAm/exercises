@@ -1,0 +1,71 @@
+body {
+  margin:  0 ;
+  background: black;
+}
+
+.card {
+  padding: 50px 30px;
+  margin:  0 auto;
+  width: 80%;
+}
+
+.card {
+  align-items: center;
+  align-content: center;
+  align-self: center;
+  display: grid;
+  color: white;
+  grid-template-areas: "img title"
+                        "img p "
+                        "btn btn";
+}
+
+.card div {
+  grid-area: img;
+  padding: 40px;
+  width: 60%
+}
+
+.card div img {
+  max-width: 100%;
+}
+
+.btn-favorite {
+  top: 10%;
+  position: fixed;
+}
+
+.title {
+  color: white;
+}
+
+
+.card h2 {
+  grid-area: title;
+  color: white;
+}
+
+.card p {
+  grid-area: p;
+}
+
+.card button {
+  grid-area: btn;
+  align-self: center;
+  width: 100%;
+}
+
+.card button {
+  border: 0;
+  border-radius: 100%;
+  width: 30px;
+  height: 30px;
+}
+
+.card .active {
+  background: greenyellow;
+}
+
+.card .inactive {
+   background: red;
+}

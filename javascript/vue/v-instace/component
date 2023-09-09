@@ -1,0 +1,16 @@
+Vue.component ('name', {
+  template: 'my html component'
+  data: {
+
+  }
+  methods:{
+
+  }
+  computed:{
+
+  }
+});;
+
+body
+  div
+    name //this is my component

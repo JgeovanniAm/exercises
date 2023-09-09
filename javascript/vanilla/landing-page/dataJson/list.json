@@ -1,0 +1,84 @@
+{ 
+    "works":[
+        {
+            "Name":"Api Clash Royale",
+            "Tools":"HTML, Sass, Gulp, Js",
+            "CodeLink":"https://github.com/JgeovanniAm/ApiClashRoyale",
+            "WebSite":"https://jgeovanniam.github.io/API.js/",
+            "arrayImg":[
+                "project_Img/apicoc/apphome.jpg",
+                "project_Img/apicoc/code.jpg",
+                "project_Img/apicoc/code1.jpg",
+                "project_Img/apicoc/search1.jpg",
+                "project_Img/apicoc/search2.jpg",
+                "project_Img/apicoc/search3.jpg",
+                "project_Img/apicoc/search4.jpg"
+            ]
+        },
+        {
+            "Name":"Project Folio",
+            "Tools":"HTML, Sass",
+            "CodeLink":"https://github.com/JgeovanniAm/Folio-PSD",
+            "WebSite":"https://jgeovanniam.github.io/Folio-PSD/",
+            "arrayImg":[
+                "project_Img/folio/desktop.jpg",
+                "project_Img/folio/psdd.jpg",
+                "project_Img/folio/code.jpg",
+                "project_Img/folio/code2.jpg",
+                "project_Img/folio/desktop2.jpg",
+                "project_Img/folio/desktop3.jpg",
+                "project_Img/folio/cel1.jpg",
+                "project_Img/folio/cel2.jpg"
+            ]
+        },
+        {
+            "Name":"Project MovilFirst",
+            "Tools":"HTML, Sass",
+            "CodeLink":"https://github.com/JgeovanniAm/movil-first",
+            "WebSite":"https://jgeovanniam.github.io/movil-first/",
+            "arrayImg":[
+                "project_Img/movilfirst/celMovilfirst.jpg",
+                "project_Img/movilfirst/code2.jpg",
+                "project_Img/movilfirst/code3.jpg",
+                "project_Img/movilfirst/desktop.jpg",
+                "project_Img/movilfirst/psd.jpg",
+                "project_Img/movilfirst/tablet.jpg"
+            ]
+        },
+        {
+            "Name":"Project Tinyone",
+            "Tools":"HTML, Sass, js",
+            "CodeLink":"https://github.com/JgeovanniAm/psdTinyone",
+            "WebSite":"https://jgeovanniam.github.io/psdTinyone/",
+            "arrayImg":[
+                "project_Img/psdtiyone/desktop.jpg",
+                "project_Img/psdtiyone/code1.jpg",
+                "project_Img/psdtiyone/code2.jpg",
+                "project_Img/psdtiyone/desktop2.jpg",
+                "project_Img/psdtiyone/desktop3.jpg",
+                "project_Img/psdtiyone/psd.jpg",
+                "project_Img/psdtiyone/psd1.jpg",
+                "project_Img/psdtiyone/psd2.jpg",
+                "project_Img/psdtiyone/tablet1.jpg",
+                "project_Img/psdtiyone/tablet2.jpg",
+                "project_Img/psdtiyone/tablet3.jpg"
+            ]
+        },
+        {
+            "Name":"Shao Kahn Game",
+            "Tools":"HTML, Sass, js, p5js",
+            "CodeLink":"https://github.com/JgeovanniAm/Shao-kahn-game",
+            "WebSite":"https://jgeovanniam.github.io/Shao-kahn-game/",
+            "arrayImg":[
+                "project_Img/shaogame/celgame.jpg",
+                "project_Img/shaogame/main.jpg",
+                "project_Img/shaogame/code2.jpg",
+                "project_Img/shaogame/code3.jpg",
+                "project_Img/shaogame/game1.jpg",
+                "project_Img/shaogame/game2.jpg",
+                "project_Img/shaogame/game3.jpg",
+                "project_Img/shaogame/game4.jpg"
+            ]
+        }   
+    ]
+}

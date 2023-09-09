@@ -1,0 +1,30 @@
+* Interface extends interface with shape
+* Interface extends class with shape
+* Class implements interface should implements all fields provided by the interface
+* Class implements class with shape
+* Class extends class with all fields
+
+++
+
+interface Point {
+    x: number;
+    y: number;
+    distance(other: Point): number;
+}
+
+class PointImplementation implements Point {
+    public x: number;
+    public y: number;
+
+    constructor(x: number, y: number) {
+        this.x = x;
+        this.y = y;
+    }
+
+    public distance(other: Point): number {
+        return Math.sqrt(Math.pow(this.x - other.x, 2) + Math.pow(this.y - other.y, 2));
+    }
+}
+
+implements interface : https://dzone.com/articles/how-to-define-an-interface-in-typescript /
+https://stackoverflow.com/questions/38834625/whats-the-difference-between-extends-and-implements-in-typescript

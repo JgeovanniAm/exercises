@@ -1,0 +1,271 @@
+@charset "UTF-8";
+#banner {
+  border: 1px solid #000;
+  background: #eaeadc;
+  overflow: hidden;
+  opacity: 1;
+  display: block !important;
+}
+.bannerSize{
+  background: url('./background2.png');
+  width: 300px;
+  height: 250px;
+  opacity: 0;
+}
+
+.backgroundBlue{
+  background: url('./backgroundBlue.png');
+  width: 100%;
+  height: 100%;
+  top: 165px;
+  position: absolute;
+}
+
+.blowlnone{
+  background: url('./BowlNone.png');
+  width: 100%;
+  height: 100%;
+  top: 135px;
+  left: 60px;
+  position: absolute;
+}
+
+.body{
+  background: url('./body.png');
+  width: 100%;
+  height: 100%;
+  top: 10px;
+  left: 115px;
+  position: absolute;
+}
+
+.bodyeyes{
+  background: url('./eyes.png');
+  width: 100%;
+  height: 100%;
+  top:0px;
+  left: 63px;
+  position: absolute;
+  opacity: 0;
+}
+
+.rightHand{
+  background: url('./rightBowl.png');
+  width: 100%;
+  height: 100%;
+  top: 50px;
+  left: 195px;
+  position: absolute;
+  opacity: 0;
+  transform: rotateZ(-12deg);
+
+}
+
+.leftHandFull{
+  background: url('./leftBowlFull.png');
+  width: 100%;
+  height: 100%;
+  top: 105px;
+  left: 60px;
+  position: absolute;
+  opacity: 0;
+}
+
+.rightHandFull{
+  background: url('./rightBowlFull.png');
+  width: 100%;
+  height: 100%;
+  top: 90px;
+  left: 178px;
+  position: absolute;
+  opacity: 0;
+}
+
+.leftHand{
+  background: url('./leftBowl1.png');
+  width: 100%;
+  height: 100%;
+  top: 105px;
+  left: 35px;
+  transform: rotateZ(11deg);
+  position: absolute;
+  opacity: 0;
+}
+
+.text1{
+  background: url('./phrase2.png');
+  width: 100%;
+  height: 100%;
+  top: 200px;
+  left: 40px;
+  position: absolute;
+  opacity: 0;
+}
+
+.chocoL1{
+  background: url('./left1.png');
+  width: 100%;
+  height: 100%;
+  top: 100px;
+  left: 90px;
+  position: absolute;
+}
+.chocoL2{
+  background: url('./left2.png');
+  width: 100%;
+  height: 100%;
+  top: 95px;
+  left: 80px;
+  position: absolute;
+}
+
+.chocoL3{
+  background: url('./left3.png');
+  width: 100%;
+  height: 100%;
+  top: 90px;
+  left: 69px;
+  position: absolute;
+}
+
+.chocoL4{
+  background: url('./left4.png');
+  width: 100%;
+  height: 100%;
+  top: 100px;
+  left: 90px;
+  position: absolute;
+}
+
+.chocoL5{
+  background: url('./left5.png');
+  width: 100%;
+  height: 100%;
+  top: 105px;
+  left: 94px;
+  position: absolute;
+}
+
+.chocoL6{
+  background: url('./left6.png');
+  width: 100%;
+  height: 100%;
+  top: 105px;
+  left: 92px;
+  position: absolute;
+}
+
+.chocos{
+  opacity: 0;
+}
+
+.chocoR1{
+  background: url('./right1.png');
+  width: 100%;
+  height: 100%;
+  top: 70px;
+  left: 240px;
+  position: absolute;
+}
+.chocoR2{
+  background: url('./right2.png');
+  width: 100%;
+  height: 100%;
+  top: 70px;
+  left: 240px;
+  position: absolute;
+}
+
+.chocoR3{
+  background: url('./right3.png');
+  width: 100%;
+  height: 100%;
+  top: 90px;
+  left: 220px;
+  position: absolute;
+}
+
+.chocoR4{
+  background: url('./right4.png');
+  width: 100%;
+  height: 100%;
+  top: 90px;
+  left: 232px;
+  position: absolute;
+}
+
+.chocoR5{
+  background: url('./right5.png');
+  width: 100%;
+  height: 100%;
+  top: 70px;
+  left: 230px;
+  position: absolute;
+}
+
+.chocoR6{
+  background: url('./right6.png');
+  width: 100%;
+  height: 100%;
+  top: 75px;
+  left: 237px;
+  position: absolute;
+}
+
+.blowlFull{
+  background: url('./fullBowl.png');
+  width: 100%;
+  height: 100%;
+  top: 130px;
+  left: 58px;
+  position: absolute;
+  opacity: 0;
+}
+
+.iceCream{
+  background: url('./iceCream.png');
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  position: absolute;
+  opacity: 0;
+}
+
+.text2{
+  background: url('./phrase2.png');
+  width: 100%;
+  height: 100%;
+  top: 200px;
+  left: 40px;
+  position: absolute;
+  opacity: 0;
+}
+
+.text3{
+  background: url('./phrase3.png');
+  width: 100%;
+  height: 100%;
+  top: 200px;
+  left: 25px;
+  position: absolute;
+  opacity: 0;
+}
+
+.products{
+  background: url('./products.png');
+  width: 100%;
+  height: 100%;
+  top: 10px;
+  position: absolute;
+  opacity: 0;
+  transform: scale(1.4);
+}
+
+.background{
+  background: url('./background1.png');
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  opacity: 0;
+}

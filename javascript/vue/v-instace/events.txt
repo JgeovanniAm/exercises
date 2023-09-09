@@ -1,0 +1,40 @@
+V-ON:CLICK
+v-OM:DBLCLICK
+V-ON:MOUSEMOVE
+v-model: is like a onchange react jsx
+v-model.lazy
+  v-model is so util to my inputs | forms and I can have a little preview of my value inputs
+
+you can use @click
+new Vue {
+  el: #myIdhtml,
+  data: {
+    age: 10,
+  }
+}
+
+<div id="myIdhtml"> 
+  <button v-on:click="age++" > addYEAR <button/>
+  <p>{{age}}</p>
+</div>
+
+// USING METHODS
+
+new Vue {
+  el: #myIdhtml,
+  data: {
+    age: 10,
+  }
+
+  methods:{
+    increment: function(num){
+      this.age += num
+    }
+  }
+}
+
+<div id="myIdhtml"> 
+  <button v-on:click="increment(1)"> increment<button/>
+  <button @click="increment(10)"> increment 10 <button/>
+  <p>{{age}}</p>
+</div>

@@ -1,0 +1,50 @@
+DATA binding
+
+v-bind
+Con esta directiva podremos vincular un atributo html (o prop de un componente, como veremos 
+enseguida) a un valor que tenemos en nuestro modelo. Recibe como parámetro el atributo. 
+De esta manera podríamos, por ejemplo, asignar el atributo disabled condicionalmente a un botón.
+
+v-html 
+es como el dangerous de react
+
+new Vue {
+  el: #myIdhtml,
+  data: {
+    name: jimmy,
+    web: http://google.com,
+    placeholder:'compa',
+    tag: ' <a href="http://google.com"> enviar <a/>'
+  }
+}
+
+<div id="myIdhtml"> 
+  <a v-bind:href="web"> enviar />
+  <input type="button" v-bind:placeholder="compa" />
+  <div v-html="tag" ></div>
+</div>
+
+//////////////////////////////////////////
+
+two-way data binding
+
+Puede usar la directiva v-model para crear bindings de datos bidireccionales 
+(two-way binding) en elementos input, textarea y select de un formulario. 
+La directiva busca automáticamente la manera correcta de actualizar el elemento según el tipo de entrada. 
+Aunque un poco mágico, v-model es esencialmente syntax sugar para actualización de datos a través de eventos de entrada
+
+v-model ignorará el value inicial, los atributos checked o selected que se encuentran en cualquier elemento de formulario. Siempre tratará los datos de la instancia de Vue como la fuente confiable. Debe declarar el valor inicial del lado de JavaScript, dentro de la opción data de su componente.
+
+new Vue {
+  el: #myIdhtml,
+  data: {
+    name: '',
+  }
+}
+
+<input v-model="name" placeholder="edíteme">
+<p>El nombre es: {{ name }}</p>
+
+ejemplo:
+
+https://es.vuejs.org/v2/guide/forms.html#Input

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Servlet_Filter_Example/Filters_Example.iml" filepath="$PROJECT_DIR$/Servlet_Filter_Example/Filters_Example.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JSTL_Examples/JSTL_Ex1.iml" filepath="$PROJECT_DIR$/JSTL_Examples/JSTL_Ex1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JSP_Examples/Jsp_Examples.iml" filepath="$PROJECT_DIR$/JSP_Examples/Jsp_Examples.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Servlet_Listener_Example/Listener_Example.iml" filepath="$PROJECT_DIR$/Servlet_Listener_Example/Listener_Example.iml" />
+    </modules>
+  </component>
+</project>

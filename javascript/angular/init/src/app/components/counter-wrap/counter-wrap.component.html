@@ -1,0 +1,5 @@
+<p>counter-wrap works!</p>
+<button (click)="increment()">counter</button>
+<p>{{GetCounter()}}</p>
+<app-counter-p [counter]="GetCounter()"></app-counter-p>
+<app-btn-child [counter]="GetCounter()" (counterFromChild)="incrementCounter($event)"></app-btn-child>

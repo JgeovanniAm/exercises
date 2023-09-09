@@ -1,0 +1,17 @@
+$white:white;
+$blue-dark:#014a74;
+$gray:#f0f0f0;
+
+@mixin WidthContents {
+    margin: 0 auto;
+    width: 85%;
+    padding-top: 140px;
+}
+@mixin titleStyle {
+    margin: 0;
+    width: 100%;
+    font-size: 2.5rem;
+    letter-spacing: 8px;
+    text-transform:uppercase;
+    font-weight: bold;
+}

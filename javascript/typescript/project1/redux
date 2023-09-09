@@ -1,0 +1,39 @@
+Redux
+ for js apps
+ redux is a state container
+ redux stores the state of my aplicattion
+
+
+install redux
+  npm i redux
+
+core concepts
+ store = holds the state of your app
+ action = descripbes what happened (state)
+ reducer = ties the store and actions together
+
+actions 
+ the only way your app can interact with the store
+ carry some infor from your app to the redux store
+ plain js object
+ have a 'type' property that indicate the type of action being perfomed
+
+ Reducers 
+  Specify how the app state chnages in response to actions sent t the store
+  function that accept state and actions as argu and return the next state 
+  {previousState, action} new state
+
+createstore(reducer) only one
+getstate
+dispatch
+
+combineReducer accept object 
+combineReducer({
+  cars: []
+  airplane: []
+})
+
+Middlewaes
+another concepts
+is the suggested way to extend Redux with custom functionality
+npm i redux-logger debugguing / middleware in redux

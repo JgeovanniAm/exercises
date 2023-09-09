@@ -1,0 +1,388 @@
+{
+  "MyUser": {
+    "User": "jimmy",
+    "Password": "1234",
+    "Level": 170,
+    "id": 0
+  },
+  "myQuestions": [
+    {
+      "id": 0,
+      "question": "Que es HTML?",
+      "options": [
+        {
+          "value": true,
+          "answer": "Es un lenguaje de programación."
+        },
+        {
+          "value": false,
+          "answer": "Es un lenguaje de Hipertexto."
+        },
+        {
+          "value": false,
+          "answer": "Es un lenguaje de texto plano."
+        }
+      ]
+    },
+    {
+      "id": 1,
+      "question": "Para que se utiliza CSS?",
+      "options": [
+        {
+          "value": true,
+          "answer": "Para escribir el contenido de la página."
+        },
+        {
+          "value": false,
+          "answer": "Para darle estilos a los elementos de la página."
+        },
+        {
+          "value": false,
+          "answer": "Para hacer que los datos se guarden en una base de datos."
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "question": "Cual es un principio de diseño?",
+      "options": [
+        {
+          "value": true,
+          "answer": "La forma sigue la función."
+        },
+        {
+          "value": false,
+          "answer": "Las cosas que tienen la misma función pueden verse diferentes."
+        },
+        {
+          "value": false,
+          "answer": "Tener texto grandes es mejor para los usuarios, asi lo leen todo de una vez."
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "question": "Que se debe hacer cuando se quiere iniciar un nuevo proyecto en el area de diseño?",
+      "options": [
+        {
+          "value": true,
+          "answer": "Hacer una investigación previa de los requerimientos."
+        },
+        {
+          "value": false,
+          "answer": "Buscar referenciales para tener una idea de lo que el cliente desea."
+        },
+        {
+          "value": false,
+          "answer": "Buscar iconos y la paleta de colores."
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "question": "Para que se utiliza el h1",
+      "options": [
+        {
+          "value": true,
+          "answer": "Para insertar links."
+        },
+        {
+          "value": false,
+          "answer": "Para poner el titulo principal."
+        },
+        {
+          "value": false,
+          "answer": "Para insertar parrafos largos."
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "question": "Que es un callback?",
+      "options": [
+        {
+          "value": true,
+          "answer": "Es una función que se pasa a otra función como un argumento, que luego se invoca dentro de la función externa para completar algún tipo de rutina o acción."
+        },
+        {
+          "value": false,
+          "answer": "Es una función que se ejecuta antes que otra funcion."
+        },
+        {
+          "value": false,
+          "answer": "Una función que no espera a otra funcion antes de continuar."
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "question": "Qué es la consola de desarrollo?",
+      "options": [
+        {
+          "value": true,
+          "answer": "Es una interfaz basada en texto que permite a los usuarios ingresar comandos de texto que el juego puede interpretar."
+        },
+        {
+          "value": false,
+          "answer": "Es una interfaz para programar."
+        },
+        {
+          "value": false,
+          "answer": "Es una interfaz utilizada para manejar y editar las aplicaciones del escrito."
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "question": "Que es una promesa en Javascript?",
+      "options": [
+        {
+          "value": true,
+          "answer": "Es un objeto que representa la terminación o error de un evento asincrónico. "
+        },
+        {
+          "value": false,
+          "answer": "Es una funcion que se pasa como argumento a otra función."
+        },
+        {
+          "value": false,
+          "answer": "Es un bucle que se usa para concatenar valores."
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "question": "¿Qué es IIFE y para qué sirve?",
+      "options": [
+        {
+          "value": true,
+          "answer": "Immediately Invoke Function Expression y crea una función y ejecutarla al mismo tiempo"
+        },
+        {
+          "value": false,
+          "answer": "Identity Information Function, sirve para envolver otras funciones."
+        },
+        {
+          "value": false,
+          "answer": "Immediately Information Expresion, y devuelve el tipo valor de las variables."
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "question": "Cuál es un principio de diseño que debemos seguir cuando pensamos en una aplicación o página web?",
+      "options": [
+        {
+          "value": true,
+          "answer": "Aún cuando nuestro sistema sea lo suficientemente intuitivo para usarse, siempre es conveniente otorgar documentación y proveer de una forma de otorgar ayuda a los usuarios"
+        },
+        {
+          "value": false,
+          "answer": "Poner la informacion separada por botones."
+        },
+        {
+          "value": false,
+          "answer": "Ponerle imagenes a todas las secciones."
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "question": "Como mejoramos la experiencia a los usuarios",
+      "options": [
+        {
+          "value": true,
+          "answer": "Haciendo que el sitio o aplicación sea simple e intuitivo pero que cumpla con las funcionalidades básicas."
+        },
+        {
+          "value": false,
+          "answer": "Hacer que el sitio sea moderno y con funcionalidades complejas."
+        },
+        {
+          "value": false,
+          "answer": "Teniendo muchos elementos visuales que distraiga al usuario."
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "question": "¿Cuál es el lenguaje estándar específico para aplicar estilos de presentación a nuestras páginas web?",
+      "options": [
+        {
+          "value": true,
+          "answer": "CSS"
+        },
+        {
+          "value": false,
+          "answer": "Flash"
+        },
+        {
+          "value": false,
+          "answer": "JavaScript"
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "question": "¿Qué es XHTML?",
+      "options": [
+        {
+          "value": true,
+          "answer": "La adaptación del estándar HTML según las reglas XML"
+        },
+        {
+          "value": false,
+          "answer": "Es el HTML dinámico"
+        },
+        {
+          "value": false,
+          "answer": "Es la como se conoce a la familia genérica de las distintas versiones de HTML"
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "question": "¿Cuál crees que es la mejor manera de aplicar estilos a una página web?",
+      "options": [
+        {
+          "value": true,
+          "answer": "Incluirlos en un archivo externo vinculado a ese fichero HTML"
+        },
+        {
+          "value": false,
+          "answer": "Incluir los estilos en las etiquetas HTML para que se carguen y ejecuten antes"
+        },
+        {
+          "value": false,
+          "answer": "Incluirlos en la sección cabecera ('head') para agruparlos en un mismo sitio en la misma página"
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "question": "¿Para que sirve el atributo 'class'?",
+      "options": [
+        {
+          "value": true,
+          "answer": "Para aplicar estilos determinados a los elementos que tenga la misma clase, es decir, el mismo valor en ese atributo."
+        },
+        {
+          "value": false,
+          "answer": "Para clasificar el tipo de enlace ('a') que estamos definiendo: 'salto' interno, vínculo a página en el mismo dominio o a un sitio web externo"
+        },
+        {
+          "value": false,
+          "answer": "Es específico para indicar el color de la fuente que queremos aplicar, Por ejemplo: p class='red' presentaría las letras en rojo de ese párrafo "
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "question": "¿Qué función tiene el elemento `${<div>}`?",
+      "options": [
+        {
+          "value": true,
+          "answer": "Es un contenedor. Crea bloques, por ejemplo para diferenciar distintas secciones de una página (cabecera, columnas..)"
+        },
+        {
+          "value": false,
+          "answer": "Es un elemento divisor, y hace que el navegador muestre una línea horizontal de separación (por ejemplo entre secciones de la página)"
+        },
+        {
+          "value": false,
+          "answer": "Permite realizar una operación arirmética de división en los valores númericos de una tabla (también se utiliza 'sum' y 'dif' para suma y resta)"
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "question": "Si incluimos esta etiqueta `${<img src=../icono.gif/>}` en nuestra página HTML, ¿qué queremos que haga el navegador?",
+      "options": [
+        {
+          "value": true,
+          "answer": "Que incluya la imagen 'icono.gif' que se encuentra en el directorio padre de la carpeta donde está nuestra página HTML"
+        },
+        {
+          "value": false,
+          "answer": "Que incluya la imagen 'icono.gif' que se encuentra en la misma carpeta donde está nuestra página HTML"
+        },
+        {
+          "value": false,
+          "answer": "Que incluya la imagen 'icono.gif' que se encuentra en el directorio 'img' "
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "question": "Cómo se incluye un comentario nuestro en una página HTML para que no se interprete por el navegador?",
+      "options": [
+        {
+          "value": true,
+          "answer": "Con la etiqueta de apertura ' al principio y final del comentario. Ej:`${<!--comentario sobre el código-->}` "
+        },
+        {
+          "value": false,
+          "answer": "Con 3 asteriscos al principio y final del comentario. Ej: ***comentario sobre el código***"
+        },
+        {
+          "value": false,
+          "answer": "Con 2 barras' al principio y final del comentario. Ej: //comentario sobre el código//"
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "question": "¿Qué etiqueta de HTML se emplea para escribir código JavaScript?",
+      "options": [
+        {
+          "value": true,
+          "answer": "`{script}`"
+        },
+        {
+          "value": false,
+          "answer": "`${Javascript}`"
+        },
+        {
+          "value": false,
+          "answer": "` ${<scripting>}`"
+        }
+      ]
+    },
+    {
+      "id": 19,
+      "question": "En HTML, para definir que el idioma principal de una página en español se emplea",
+      "options": [
+        {
+          "value": true,
+          "answer": "`${<html lang='es'>}`"
+        },
+        {
+          "value": false,
+          "answer": "`${<html id='es'>}`"
+        },
+        {
+          "value": false,
+          "answer": "`${<head id='es'>}` "
+        }
+      ]
+    },
+    {
+      "id": 20,
+      "question": "En HTML, el elemento `${<label>}` mejora la accesibilidad de",
+      "options": [
+        {
+          "value": true,
+          "answer": "Los usuarios ciegos y de los usuarios con problemas de movilidad o destreza"
+        },
+        {
+          "value": false,
+          "answer": "Los usuarios con ceguera al color y de los usuarios sordos "
+        },
+        {
+          "value": false,
+          "answer": "Los usuarios sordos y de los usuarios mudos"
+        }
+      ]
+    }
+  ]
+}

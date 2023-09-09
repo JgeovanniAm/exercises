@@ -1,0 +1,5 @@
+Template Engines 
+res.render(view , [Locals], callback)
+
+< JADE / template engine > - < E J S / template engine >
+node template engine

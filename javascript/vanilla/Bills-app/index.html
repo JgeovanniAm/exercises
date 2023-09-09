@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Jimmy</title>
+</head>
+
+<body>
+    <div id="wrapper">
+        <article class="sections">
+            <span class="logo">JimmyBills</span>
+            <ul class="list-Sections">
+                <li class="items">
+                    <button class="btnSave">save</button>
+                </li>
+                <li class="items">
+                    <button class="btncreate">create</button>
+                </li>
+                <li class="items">
+                    <button class="btnedit">edit</button>
+                </li>
+                <li class="items">
+                    <img class="trash" src="img/basura.png" alt="">
+                </li>
+                <li class="items">
+                    <input type="search" placeholder="search" id="">
+                </li>
+            </ul>
+        </article>
+        <div class="table_content">
+            <table>
+                <tr class="tr-title">
+                    <th class="th_name">name</th>
+                    <th class="th_date">date</th>
+                    <th class="th_amount">total</th>
+                </tr>
+                <tbody class="table" data-num="0"></tbody>
+            </table>
+            <!--  future interactive
+            <footer class="footer">
+                <p class="infopage">pagina 1 of 10</p>
+                <button>add page</button>
+                <button class="previous">previous</button>
+                <button class="next">next page</button>
+            </footer>
+            -->
+        </div>
+    </div>
+    <script src="js/data.js"></script>
+    <script src="js/eventDrop.js"></script>
+    <script src="js/sort.js"></script>
+    <script src="js/FormCreate.js"></script>
+</body>
+
+</html>

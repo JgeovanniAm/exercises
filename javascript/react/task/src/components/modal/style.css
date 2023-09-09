@@ -1,0 +1,11 @@
+.modal {
+  background: rgb(10, 147, 160);
+  position: absolute;
+  top: 15%;
+  bottom: 0;
+  width: 600px;
+  height: 400px;
+  left: 30%;
+  right: 0;
+  z-index: 1;
+}

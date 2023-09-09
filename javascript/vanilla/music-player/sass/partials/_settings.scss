@@ -1,0 +1,58 @@
+body{
+    background: black;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    font-family: 'Quattrocento', serif;
+}
+
+button{
+    outline: none;
+}
+
+audio {
+    width: 50%;
+    height: 25px;
+    margin: 0 auto;
+    display: block;
+    box-shadow: 0px 0px 5px rgb(0, 156, 104) ;
+    
+}
+
+audio::-webkit-media-controls-panel {
+    width: 30%;
+    border:0;
+    background: black;
+}
+
+audio::-webkit-media-controls-timeline-container {
+    background: black;
+}
+
+audio::-webkit-media-current-time {
+    color: rgb(0, 156, 104);
+}
+
+audio::-webkit-media-controls-play-button {
+    display: none;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    border: 1px solid rgb(0, 156, 104);
+    width: 10px;
+    opacity: 0.3;
+}
+
+::-webkit-scrollbar-button {
+    border: 1px solid rgb(0, 156, 104);
+    background-color: black;
+    opacity: 0.3;
+}
+
+::-webkit-scrollbar-corner {
+    background-color: black;
+}

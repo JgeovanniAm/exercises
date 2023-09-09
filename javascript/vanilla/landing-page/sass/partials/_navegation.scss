@@ -1,0 +1,70 @@
+.fixed{
+    transition: 2s;
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    background: black;
+    opacity:0.7;
+}
+.navegation{
+    display: flex;
+    justify-content: space-around;
+}
+.image_logo{
+    height: 55px;
+    padding: 10px 50px 0px 10px;
+}
+.tabs_list{
+    z-index: 2;
+    padding: 10px 0px 0px 0px;
+    margin: 0;
+}
+.tabs_list li{
+    padding: 15px 10px 10px 15px;
+    color: $white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 17px;
+    letter-spacing: 8px;
+    font-weight: lighter;
+    text-transform: uppercase;
+    display: inline-block;
+    cursor: pointer;
+    background-color: none;
+    transition: 1s ease-in;
+    outline: none;
+    overflow: hidden;
+    z-index: -1;
+    &:hover{
+        border-top:  0.2px solid $blue-dark;
+    }
+}
+.tabs_list li + li{
+    margin-left: 70px;
+    padding: 15px 10px 10px 15px;
+}
+.tabs_list li a {
+    color: $white;
+    width: 40px;
+    &:active{
+        color: $blue-dark;
+    }
+}
+.icons_services{
+    padding:  20px 0px 10px 0px;
+    display: inline-block;
+}
+.icon{
+    padding:  15px 0px 0px 0px;
+    width:30px;
+    height: 30px;
+    img{
+        height: 30px;
+    }
+}
+.icon + a{
+    margin-left: 30px;
+}
+.icon img:hover{
+    opacity: 0.5;
+}

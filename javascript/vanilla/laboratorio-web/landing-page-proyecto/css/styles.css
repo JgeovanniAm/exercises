@@ -1,0 +1,210 @@
+body {
+  margin: 0;
+  padding: 0; }
+
+ul {
+  list-style: none; }
+
+a {
+  text-decoration: none; }
+
+.header {
+  height: 90vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.9)), url("../img/coverartis.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center center;
+  background-size: cover;
+  padding: 5px; }
+
+.header-title {
+  margin: 0;
+  color: white;
+  position: relative;
+  top: 40vh;
+  text-align: center;
+  font-family: "Encode Sans Expanded", sans-serif;
+  font-size: 2.3rem;
+  font-weight: normal;
+  letter-spacing: 3px;
+  text-shadow: 4px 4px 8px #006555, -5px -5px 8px #002671; }
+  @media screen and (min-width: 700px) {
+    .header-title {
+      font-size: 3.5rem; } }
+
+.cover-tour {
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)), url("../img/cover3.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center center;
+  background-size: cover;
+  height: 75vh;
+  padding: 10px 0; }
+
+.title-tour {
+  margin: 0;
+  color: white;
+  position: relative;
+  top: 30vh;
+  text-align: center;
+  font-family: "Poiret One", cursive;
+  font-size: 2.3rem;
+  font-weight: normal;
+  letter-spacing: 3px; }
+  @media screen and (min-width: 700px) {
+    .title-tour {
+      font-size: 3rem; } }
+
+.wrapper-artist {
+  background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.9)), url("../img/coverartis.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center center;
+  background-size: cover;
+  padding-bottom: 20px; }
+  @media screen and (min-width: 900px) {
+    .wrapper-artist {
+      display: grid;
+      grid-template-columns: 2fr 1fr; } }
+
+.artist-one {
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../img/dj-skt.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  height: 40vh;
+  opacity: 0.9;
+  animation: cover 3s infinite; }
+  @media screen and (min-width: 900px) {
+    .artist-one {
+      height: 100vh;
+      clip-path: polygon(65% 0, 100% 46%, 68% 100%, 0% 100%, 0 49%, 0% 0%); } }
+  .artist-one .title-artits {
+    margin: 0;
+    color: white;
+    position: relative;
+    top: 45%;
+    text-align: center;
+    font-family: "Encode Sans Expanded", sans-serif;
+    font-size: 1.5rem;
+    font-weight: normal;
+    letter-spacing: 3px;
+    opacity: 0.5; }
+    @media screen and (min-width: 800px) {
+      .artist-one .title-artits {
+        font-size: 2.5rem;
+        left: -10%; } }
+
+.artist-two {
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../img/Patrick-Topping_Ibiza-Style-001.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  height: 40vh;
+  opacity: 0.9;
+  animation: cover 3s infinite; }
+  @media screen and (min-width: 900px) {
+    .artist-two {
+      height: 100vh;
+      clip-path: polygon(65% 0, 100% 46%, 68% 100%, 0% 100%, 0 49%, 0% 0%); } }
+  .artist-two .title-artits {
+    margin: 0;
+    color: white;
+    position: relative;
+    top: 45%;
+    text-align: center;
+    font-family: "Encode Sans Expanded", sans-serif;
+    font-size: 1.5rem;
+    font-weight: normal;
+    letter-spacing: 3px;
+    opacity: 0.5; }
+    @media screen and (min-width: 800px) {
+      .artist-two .title-artits {
+        font-size: 2.5rem;
+        left: -10%; } }
+
+.artist-three {
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../img/jin.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  height: 40vh;
+  opacity: 0.9;
+  animation: cover 3s infinite; }
+  @media screen and (min-width: 900px) {
+    .artist-three {
+      height: 100vh;
+      clip-path: polygon(65% 0, 100% 46%, 68% 100%, 0% 100%, 0 49%, 0% 0%); } }
+  .artist-three .title-artits {
+    margin: 0;
+    color: white;
+    position: relative;
+    top: 45%;
+    text-align: center;
+    font-family: "Encode Sans Expanded", sans-serif;
+    font-size: 1.5rem;
+    font-weight: normal;
+    letter-spacing: 3px;
+    opacity: 0.5; }
+    @media screen and (min-width: 800px) {
+      .artist-three .title-artits {
+        font-size: 2.5rem;
+        left: -10%; } }
+
+@keyframes cover {
+  0% {
+    opacity: 0.9; }
+  90% {
+    opacity: 0.8; } }
+.destails-artits {
+  padding: 10px; }
+  @media screen and (min-width: 900px) {
+    .destails-artits {
+      align-self: center; } }
+  .destails-artits .list .item {
+    margin: 20px 0px;
+    color: white;
+    opacity: 0.8;
+    font-size: 1rem;
+    font-family: "Encode Sans Expanded", sans-serif; }
+    .destails-artits .list .item:last-child {
+      color: white;
+      opacity: 0.8;
+      font-size: 1rem;
+      font-family: "Encode Sans Expanded", sans-serif;
+      text-decoration: line-through;
+      text-decoration-color: #491807;
+      text-shadow: 4px 4px 8px #006555, -5px -5px 8px #002671; }
+      @media screen and (min-width: 700px) {
+        .destails-artits .list .item:last-child {
+          font-size: 2rem;
+          text-align: center; } }
+    @media screen and (min-width: 700px) {
+      .destails-artits .list .item {
+        font-size: 2rem;
+        text-align: center; } }
+
+.footer {
+  background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.9)), url("../img/coverartis.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center center;
+  background-size: cover;
+  border: 0.1px solid rgba(19, 19, 19, 0.638); }
+  .footer ul {
+    margin: 0;
+    padding: 20% 0; }
+    .footer ul li {
+      margin: 0;
+      color: white;
+      text-align: center;
+      font-family: "Encode Sans Expanded", sans-serif;
+      font-size: .9rem; }
+      @media screen and (min-width: 700px) {
+        .footer ul li {
+          font-size: 2rem; } }
+
+/*# sourceMappingURL=styles.css.map */

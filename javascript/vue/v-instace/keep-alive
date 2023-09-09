@@ -1,0 +1,10 @@
+componentes dinamicos
+importante este binding v-bind:is
+Sin embargo, al cambiar entre estos componentes, a veces querrá mantener su estado o evitar la renderización múltiple por motivos de rendimiento. Por ejemplo, al expandir nuestra interfaz con pestañas:
+
+<keep-alive>
+  <component v-bind:is="currentTabComponent"></component>
+</keep-alive>
+
+ejemplo en este link:
+https://es.vuejs.org/v2/guide/components-dynamic-async.html

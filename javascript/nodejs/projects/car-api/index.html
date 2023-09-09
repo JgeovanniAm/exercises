@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>DealerCars</title>
+    <link rel="stylesheet" href="public/styles.css">
+</head>
+<body>
+    <div class="wrapper">
+        <a class="Links" href="http://localhost:5000/car">cars</a>
+        <a class="Links" href="http://localhost:5000/brand">brand</a>
+        <a href="http://localhost:5000/api/v1/cars/report">report</a>
+        <div class="table_content">
+            <input type="search" id="search" placeholder="search">
+            <button class="btnSearch">search</button>
+            <table>
+                <tr class="tr-title">
+                    <th class="th_models">Models</th>
+                    <th class="th_color">Color</th>
+                    <th class="th_brand">Brand</th>
+                    <th class="th_age">Age</th>
+                    <th class="th_age">id</th>
+                </tr>
+                <tbody class="table"></tbody>
+            </table>
+        </div>
+        <button class="btPrevious">PreviousPage</button>
+        <button class="btNext">NextPage</button>
+        <input type="text" class="btnId" placeholder="escriba el id a borrar">
+        <input type="button" id="btnRemove" value="remove">
+        <form style="display:none" class="editForm" method="PUT">
+            <label class="" for="id">id</label>
+            <input class="id" type="number" name="id">
+            <label class="" for="Models">Models</label>
+            <input class="Models" type="text" name="Models">
+            <label class="" for="Color">Color</label>
+            <input class="color" type="text" name="Color">
+            <label class="" for="Brand">Brand</label>
+            <input class="brand" type="text" name="Brand">
+            <label class="" for="Age">Age</label>
+            <input class="Age" type="number" name="Año">
+            <div>
+                <input type="button" id="sendEdit" value="send">
+            </div>
+        </form>
+        <button class="openEdit">edit</button>
+    </div>
+    <script src="./public/api.js"></script>
+    <script src="./public/delete.js"></script>
+    <script src="./public/pages.js"></script>
+    <script src="./public/put.js"></script>
+    <script src="./public/search.js"></script>
+</body>
+</html>

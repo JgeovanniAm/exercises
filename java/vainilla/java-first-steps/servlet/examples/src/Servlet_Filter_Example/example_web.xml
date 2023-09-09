@@ -1,0 +1,57 @@
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
+                      http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+  version="4.0"
+  metadata-complete="true">
+  
+  <!-- Servlet Mapping -->
+  <servlet>
+      <servlet-name>theservlet</servlet-name>
+      <servlet-class>filters.TheServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+      <servlet-name>theservlet</servlet-name>
+      <url-pattern>/</url-pattern>
+  </servlet-mapping>
+  
+  <!-- JSP Mapping -->
+  <servlet>
+      <servlet-name>thejsp</servlet-name>
+      <jsp-file>/Simple.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+      <servlet-name>thejsp</servlet-name>
+      <url-pattern>/simplejsp</url-pattern>
+  </servlet-mapping>
+  
+  <!-- Filter Mappings Ordered -->
+  <filter> 
+    <filter-name>Filter_1</filter-name>
+    <filter-class>filters.Filter_1</filter-class> 
+  </filter> 
+  <filter> 
+    <filter-name>Filter_2</filter-name>
+    <filter-class>filters.Filter_2</filter-class> 
+  </filter> 
+  <filter> 
+    <filter-name>Filter_3</filter-name>
+    <filter-class>filters.Filter_3</filter-class> 
+  </filter>
+  
+  <filter-mapping>
+	    <filter-name>Filter_1</filter-name>
+	    <url-pattern>/*</url-pattern>
+  </filter-mapping>
+    <filter-mapping>
+	    <filter-name>Filter_2</filter-name>
+		<url-pattern>/*</url-pattern>
+  </filter-mapping>
+    <filter-mapping>
+	    <filter-name>Filter_3</filter-name>
+	    <servlet-name>theservlet</servlet-name>
+  </filter-mapping>
+
+
+  
+</web-app>

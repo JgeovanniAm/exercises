@@ -1,0 +1,15 @@
+npm i -g typescript
+
+tsc --version
+
+create my file .typescript = TS 
+run in my terminal tsc script.js ( this file script.ts is the file that i want to compiler my code TS)
+when i run my command "tsc script.ts" is going to compiler and create a  new file script.js;
+
+----------------------------------------------------------------
+
+if you want to watch ever changes in my file . typescript and compiler in ever change that i do.
+the command is very simple you need to run:
+"tcs mynamefile.ts -w"
+
+----------------------------------------------------------------

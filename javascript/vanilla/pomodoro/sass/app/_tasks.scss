@@ -1,0 +1,43 @@
+body{
+    margin: 0 auto;
+    background: black;
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+.app{
+    margin:  0 auto;
+    width: 90%;
+}
+.form{
+    padding-top: 70px;
+    margin: 0 auto;
+    width: 30%;
+}
+.button_print{
+    display: inline-block;
+    background: none;
+    padding: 5px 10px 5px 10px;
+    border: 0.4px solid whitesmoke;
+    color: white;
+    margin-left: 30px;
+}
+input[type="text"]{
+    background: none;
+    border:0px;
+    color: white;
+    border-bottom: 2px solid white;
+    margin-right: 30px;
+}
+input[type="number"]{
+    background: none;
+    border:0px;
+    color: white;
+    border-bottom: 2px solid white;
+}
+.homework{
+    margin: 0 auto;
+    width: 50%;
+}
+tr{
+    border: 0.4px solid whitesmoke;
+}

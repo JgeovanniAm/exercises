@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>jimmy Alvarez banners</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <meta name="ad.size" content="width=300,height=250">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        div {
+            position: absolute;
+            background-repeat: no-repeat !important;
+        }
+        img{
+            position: absolute;
+        }
+
+        #loader {
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+    <script type="text/javascript"> const clickTag = ""; </script>
+</head>
+
+<body>
+    <div id="loader"></div>
+    <div class="banner bannerSize" id="banner" style="display: none">
+        <div id="btnExit" class="bannerSize">
+            <div class="backgroundBlue"></div>
+            <div class="bottle"></div>
+            <div class="text1"></div>
+            <div class="text2"></div>
+            <div class="get"></div>
+            <div class="phrase1"></div>
+            <div class="arrow1"></div>
+            <div class="phrase2"></div>
+            <div class="arrow2"></div>
+            <div class="line"></div>
+            <div class="phrase-end"></div>
+        </div>
+    </div>
+    <script src="TweenMax.min.js"></script>
+    <script type="text/javascript" src="main.js"></script>
+    <script type="text/javascript">
+        const _btnExit = document.getElementById('btnExit');
+        _btnExit.addEventListener('click', clickTagHandler)
+        function clickTagHandler() { window.open(window.clickTag); }
+    </script>
+</body>
+
+</html>

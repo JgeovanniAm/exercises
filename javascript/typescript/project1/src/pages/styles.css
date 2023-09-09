@@ -1,0 +1,26 @@
+.allcard,
+.allseason-card {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    width: 70%;
+}
+
+.allseason-card {
+    width: 90%;
+    margin: 0 auto ;
+}
+
+.wrapper-cards {
+    display: flex;
+}
+
+.btn-more {
+    display: block;
+    margin: 30px auto;
+    width: 150px;
+}
+
+.info-death {
+    width: 30%
+}

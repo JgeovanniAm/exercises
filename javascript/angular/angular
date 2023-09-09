@@ -1,0 +1,52 @@
+angular cli
+  - npm i -g @angular/cli
+create project
+  ng new "name of my project"
+
+what it angular.json
+  this file We can modific our project, is like webpack.js 
+
+tseslint.json
+  this file help us to write code of the best way and clear
+
+karma testing
+
+Angular can run in many environments 
+  platFormBrowserDynamic() 
+    angular or my app is running in the browser
+    this is my webpApp
+
+app.module.ts
+  We'll register all our components to use in all our template
+
+decorationClass 
+  import {Component} 'angular-core'
+  ejemplo :
+    @Component({
+      selector:'app-component',
+      template: 'h1--h1',
+      templateUrl:'app.component.html'
+      styleUrl: 'styles.css',
+    })
+
+HOW CAN I CREATE COMPONENTS AUTOMATIC?
+  you just must run command
+  -ng generate component urlpath
+  -ng g c file/components/header
+
+directives 
+  *ngIf  <p *ngIf="show" > hola </p>
+  *ngFor  <li *ngFor="let item of names; let i = index"> {{index}}: {{item}} </li>
+          if you need to use item in some attribute:
+          <p [id]="item.name">{{item.name}}</p>
+  -events 
+    (click)="myFunction()"
+    ng-click="myFunction()"
+
+router 
+ [routerLink]="['home','hola','id']" is home/hola/id
+
+services
+  give information who need it
+  make request CRUD(create, delete, put)
+  keepts persistent ny data

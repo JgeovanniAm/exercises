@@ -1,0 +1,42 @@
+#wrapper{
+    width: 800px;
+    margin: 0 auto;
+}
+
+.config{
+    display: flex;
+    justify-content: space-between
+}
+
+.Calendar{
+    display: flex;
+    justify-content: space-around ;
+}
+
+.week{
+    display: grid;
+    grid-template-columns: repeat(7 , 1fr);
+    grid-gap: 25px;
+}
+
+.day{
+    padding: 5px;
+}
+
+.dates--days{
+    display: grid;
+    grid-template-columns: repeat(7 , 1fr);
+    grid-gap: 25px;   
+}
+
+.event{
+    color: blue;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+dialog{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+}

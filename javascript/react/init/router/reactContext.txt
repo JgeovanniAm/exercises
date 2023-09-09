@@ -1,0 +1,20 @@
+Context provee una forma de pasar datos a través del
+árbol de componentes sin tener que pasar props manualmente en cada nivel.
+Context proporciona una forma de compartir valores como estos entre componentes sin tener
+que pasar explícitamente un prop a través de cada nivel del árbol ( de padre a hijo)
+
+* React.createContext
+Crea un objeto Context. Cuando React renderiza un componente que se suscribe a este objeto 
+Context, este leerá el 
+valor de contexto actual del Provider más cercano en el árbol.
+ejemplo: 
+  const MyContext = React.createContext(defaultValue);
+
+* Context.Provider
+Cada objeto Context viene con un componente Provider de React que permite que los componentes 
+que lo consumen se suscriban a los cambios del contexto.
+
+Acepta un prop value que se pasará a los componentes consumidores que son descendientes de 
+este Provider. Un Provider puede estar conectado a muchos consumidores. Los Providers pueden 
+estar anidados para sobreescribir los valores más profundos dentro del árbol.
+

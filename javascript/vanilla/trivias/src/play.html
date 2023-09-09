@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>TriviasGame</title>
+    <link href="https://fonts.googleapis.com/css?family=Rubik+Mono+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="manifest" href="./manifest.json" />
+</head>
+
+<body>
+    <a href="index.html" class="btn--back"><img src="imagenes/back.png" alt=""></a>
+    <div class="container2">
+        <div class="wrapper--info--user">
+            <h4>User:
+                <span class="name--user">Jimmy</span>
+            </h4>
+            <h4>level:
+                <span class="level"></span>
+                <span class="level">Pts.</span>
+            </h4>
+        </div>
+        <div class="wrapper--center">
+            <img src="imagenes/light1.png" alt="bombillo" class="img--light">
+            <button class="btn-ui" id="btn-play">Play</button>
+        </div>
+        <div class="wrapper--buttons">
+            <button class="btn-ui" id="newQ">+</button>
+            <button class="btn-ui" id="infodev">
+                <img src="imagenes/information.png" alt="" class="img-button">
+            </button>
+        </div>
+    </div>
+    <div class="wrapper-game">
+        <div class="animation_loader">
+            <h1 class="title-animation">Suerte!</h1>
+        </div>
+        <div class="wrapper-trivia">
+            <div class="question"></div>
+            <div class="wrapper-answers">
+                <button class="answers"></button>
+                <button class="answers"></button>
+                <button class="answers"></button>
+            </div>
+            <button class="next">next</button>
+            <button style="display: none" class="watchEnd btn-ui">ver puntajes</button>
+        </div>
+        <div style="display: none" class="end">
+            <span>Puntaje</span>
+            <span class="score">0 Pts</span>
+            <form>
+                <input class="btn-score-submit btn-ui" type="button" value="volver">
+            </form>
+        </div>
+    </div>
+    <script async src="js/game.js"></script>
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('./sw.js');
+            });
+        }
+    </script>
+</body>
+
+</html>

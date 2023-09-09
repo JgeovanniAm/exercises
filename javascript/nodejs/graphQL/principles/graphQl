@@ -1,0 +1,137 @@
+GraphQl 
+    GraphQL is a query language for APIs and a runtime for fulfilling those queries with your existing data. 
+    isn't a framework
+    a unique endpoint
+    don't work with overfetching
+
+ schema GraphQL
+    Whitout that, we don't work or build the API
+    We won't use more the methologic of API REST (post, get...) and "endpoint"
+    it's the most important thing to build our api
+
+    Type of Operation
+        mutation
+        query
+        subscription
+        ------------------------------------------
+        scalar Type
+            int!  65
+            float! .098
+            string!
+            boolean!
+            ID int/string!
+
+            sintaxis: nameProp: typeData
+        
+        object Type
+            structure and model of my services
+            you can define all the data that you want
+            all the data must have fiel
+
+            sintaxis :  type myType {
+                            id: ID!
+                            name: string!
+                            age: Int!
+                        }
+
+        Enum
+            sintaxis  enum myType {
+                            MYIDNUMBER
+                            MINAME_PERSON
+                        }
+
+        type modifier
+            sintaxis type myType {
+                        name: !string 
+                    }
+        
+        array type 
+            sintaxis type myType {
+                        name: [string] 
+                    }
+        
+        interfaces
+            sintaxis interface Person {
+                        name: String!
+                        lastname: String!
+                    }
+                    interfaces Pet implements Person {
+                        animal: String!
+                        name: String!
+                        lastname: String!
+                    }
+
+        ------------------------------------------
+        Root types
+            type query 
+            type mutation 
+            type subscription
+
+            query = consult( rest => GET )
+            mutation = mutation( rest => POST, PATHC, PUT, DELETE )
+            subscription = subscription.interaction of my info in real time (websockets)
+
+        -------------------------------------------
+        Input Type
+            elements that allow passing values to query / mutations
+
+Querys
+
+    alias: 
+        walter : character( id:"2" ){
+            name
+            id
+            description
+        }
+
+    fragment:
+         walter : character( id:"2" ){    // without fragment  
+            name
+            id
+            description
+        }
+         jesse : character( id:"2" ){
+            name
+            id
+            description
+        }
+        
+        fragment myFrgament on character {   // wiht fragment
+            id
+            name
+            description
+        }
+
+         walter : character( id:"2" ){
+            ...myFrgament
+        }
+         jesse : character( id:"2" ){
+           ...myFrgament
+        }
+    
+    variable
+        query myList( $myVar: ID! ){ 
+            character( id:$myVar ){
+                name
+                id
+                description
+            }
+        }
+    
+    mutations 
+        mutation {
+            MYMUTATION( character: "1" ) {
+                id
+                name
+            }
+        }
+
+    skip or include 
+        character( id:"2" ){
+            name
+            id @include(if: true )
+            description
+        }
+    
+    subscription 
+        all that is in playgraoud or apollo server express api

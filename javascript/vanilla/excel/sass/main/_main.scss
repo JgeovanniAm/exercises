@@ -1,0 +1,145 @@
+body{
+    color: white;
+    margin: 0;
+    padding: 0;
+    background-color:#f0f0f0;
+    background-image: url('../img/manoblanco.png');
+    background-size: 550px;
+    background-position: center 70%;
+    background-repeat: no-repeat;
+}
+.settings{
+    margin-top: 20px;
+    button{
+        background: #f0f0f0;
+        font-weight: bold;
+        align-items: flex-start;
+        text-align: center;
+        box-sizing: border-box;
+        border-width: 0.5px;
+        border-style: outset;
+        border-image: initial;
+        color: rgb(4, 152, 172);
+        display: inline;
+        font-size: 18px;
+        margin:10px 10px 10px 10px;
+        outline: none;
+        cursor: pointer;
+        &:hover{
+            background:  rgb(4, 152, 172);
+            color:whitesmoke;;
+        }
+    }
+}
+.title{
+    color: rgb(4, 152, 172);;
+    margin: 0;
+    display: block;
+    opacity: 0.7; 
+    &::before{
+        content: "";
+        background-image: url('../img/logo.png');
+        display: inline-block;
+        height: 100px;
+        width: 100px;
+        background-position: center center;
+        background-size: 100px;
+        margin-right: 20px;
+        position: relative;
+        top: 50px;   
+    }
+}
+.block{
+    padding: 0% 5% 5% 10%;
+}
+.wraper{
+    display: flex;
+}
+.wraper-table{
+    display: block;
+    overflow: scroll;
+    height: 60vh;
+    tr{
+        display:inline-flex;
+    div{
+        padding: 10px 20px;
+        color: black;
+        text-align: center;
+        border: 0.1px solid rgba(56, 56, 56, 0.349);
+        outline: none;
+    }
+}
+}
+.block-controls{
+    display: flex;
+    margin: 25px 25px;
+    button{
+        background: #f0f0f0;
+        font-weight: bold;
+        align-items: flex-start;
+        text-align: center;
+        box-sizing: border-box;
+        border-width: 0.5px;
+        border-style: outset;
+        border-image: initial;
+        color: rgb(4, 152, 172);
+        display: inline;
+        font-size: 18px;
+        margin:10px 10px 10px 10px;
+        outline: none;
+        cursor: pointer;
+        &:hover{
+            background:  rgb(4, 152, 172);
+            color:whitesmoke;;
+        }
+    }
+}
+.row{
+    width: 60px;
+    margin:0.5px 0px 0.5px 0px;
+    background: transparent;
+}
+.btn-column,
+.btn-row{
+    background: rgba(180, 180, 180, 0.349);
+    color: rgb(4, 152, 172);
+    font-size: 2.4rem;
+    font-weight: bold;
+    padding: 5px 20px;
+    margin-left:10px;
+    outline: none;
+}
+.messageDialog,
+.titleDialog{
+    font-weight: bold;
+    color: white;
+}
+.dialogPage{
+    width: 400px;
+    background:rgba(4, 153, 172, 0.392);
+    border: 2px rgb(4, 152, 172) solid;
+    position: absolute;
+    top: 40%;
+    right: 0;
+    left: 0;
+    button{
+        background: #f0f0f0;
+        font-weight: bold;
+        align-items: flex-start;
+        text-align: center;
+        box-sizing: border-box;
+        border-width: 0.5px;
+        border-style: outset;
+        border-image: initial;
+        color: rgb(4, 152, 172);
+        display: inline;
+        font-size: 18px;
+        margin:10px 10px 10px 10px;
+        outline: none;
+        cursor: pointer;
+        &:hover{
+            background:  rgb(4, 152, 172);
+            color:whitesmoke;;
+        }
+    }
+}

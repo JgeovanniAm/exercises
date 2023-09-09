@@ -1,2 +1,0 @@
-# PortfolioJimmy
-my portfolio project

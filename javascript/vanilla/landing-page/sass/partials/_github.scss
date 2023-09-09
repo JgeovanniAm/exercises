@@ -1,0 +1,54 @@
+.github{
+    background-color:$gray;
+    overflow: hidden;
+}
+.content_github{
+    @include WidthContents;
+    background-image: url('../../img/mano blanco.png');
+    background-position-x: 50%;
+    background-position-y: 50%;
+    background-attachment: fixed;
+    background-repeat:no-repeat;
+    padding-bottom: 180px;
+}
+.title_github{
+    @include titleStyle;
+}
+.description_github{
+    font-size: 1.6em;
+    margin-top:60px;
+    padding: 15px;
+    background: $blue_dark;
+    display: inline-block;
+    color: $white;
+    opacity: 0.4;
+    letter-spacing:3.4px;
+}
+.list{
+    margin: auto;
+    display: flex;
+    overflow: auto;
+    width: 100%;
+    padding: 0;
+    padding-top: 90px;
+}
+.li_activity{
+    margin:0px 70px 0px 70px;
+    width: 30%;
+    display:inline-block;
+    padding-bottom: 40px;
+}
+.title_repo{
+    letter-spacing: 1.5px;
+    margin-bottom: 30px;
+    font-weight: bold;
+    font-size: 1.4em;
+}
+.text_commit{
+    letter-spacing: 1.5px;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+.url_repo{
+    color: $blue_dark;
+}

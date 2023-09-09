@@ -1,0 +1,165 @@
+body {
+  color: #0c8fb7;
+  margin: 0;
+  padding: 0;
+  font-family: 'Muli', sans-serif; }
+
+.header {
+  background: #0c8fb7;
+  height: 95vh;
+  overflow: hidden; }
+
+.header__btn {
+  background: none;
+  outline: none;
+  color: white;
+  font-size: 1.4rem;
+  border: 0px;
+  padding: 20px;
+  z-index: 1;
+  cursor: pointer; }
+
+.navegation {
+  background: #046b5d;
+  width: 100%;
+  height: 95vh;
+  position: absolute;
+  /*event js*/
+  left: -80vh; }
+
+.list {
+  padding: 0;
+  margin: 0 auto;
+  width: 90%;
+  position: relative;
+  top: 25vh;
+  list-style: none; }
+
+.list__items {
+  margin: 25px 0px 25px 0px;
+  text-align: center; }
+
+.list__items a {
+  text-decoration: none;
+  color: white;
+  font-size: 2.2rem; }
+
+.header__title {
+  font-size: 2.6rem;
+  position: absolute;
+  top: 15%;
+  padding: 0px 0px 0px 70px;
+  left: 0px;
+  color: white;
+  height: auto;
+  opacity: 0.9;
+  right: 0px;
+  text-align: center; }
+  .header__title::before {
+    content: "";
+    display: block;
+    background-image: url("../img/manoblanco.png");
+    height: 100px;
+    background-size: 140px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    position: relative;
+    top: 110px;
+    left: -35%; }
+
+.post {
+  background: white;
+  display: grid; }
+  @media screen and (min-width: 700px) {
+    .post {
+      grid-template-columns: 2fr 1fr; } }
+
+.main-post {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+  width: 100%;
+  grid-template-areas: "uno uno"; }
+
+.main-post__title {
+  grid-area: uno;
+  margin-bottom: 40px;
+  text-align: center; }
+
+.main-post__post {
+  padding: 10px; }
+  .main-post__post p {
+    font-size: 14px; }
+  .main-post__post .image {
+    max-width: 100%; }
+
+.Sidebar-post {
+  padding: 10px;
+  height: auto;
+  background: #046b5d;
+  display: grid;
+  grid-row-gap: 15px; }
+
+.Sidebar-post__title {
+  color: white;
+  text-align: center; }
+
+.Sidebar-post__post p {
+  color: white; }
+.Sidebar-post__post img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%; }
+
+/*   <style>
+.item1 { grid-area: header; }
+.item2 { grid-area: menu; }
+.item3 { grid-area: main; }
+.item4 { grid-area: right; }
+.item5 { grid-area: footer; }
+
+.grid-container {
+    display: grid;
+    grid-template-areas:
+    'header header header header header '
+    'menu main main main right '
+    'menu footer footer footer footer ';
+    grid-gap: 10px;
+    background-color: #2196F3;
+    padding: 10px;
+}
+
+.grid-container > div {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+}
+</style>
+
+*/
+.footer {
+  background: #0c8fb7 url("../img/manoblanco.png") center center no-repeat;
+  background-size: 25vh;
+  width: 100%; }
+
+.footer__list {
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 15vh 30px 10vh 30px;
+  margin: 0; }
+
+.footer__list li {
+  margin: 0px 10px 0px 10px; }
+  .footer__list li a {
+    text-decoration: none;
+    color: white; }
+
+.footer__text {
+  color: white;
+  margin: 0;
+  padding: 20px; }
+
+/*# sourceMappingURL=style.css.map */

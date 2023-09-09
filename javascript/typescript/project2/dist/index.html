@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="../src/css/styles.css">
+</head>
+
+<body>
+
+  <div class="root">
+
+    <header>
+      <img class="logo" src="./ímg/user-group.png" alt="">
+      <div class="user">
+        <img src="./ímg/user.png" alt="">
+        <button id="display-form">what are you thinking?</button>
+      </div>
+    </header>
+
+    <div id="post" class="hid-post">
+      <button class="post-closebtn">x</button>
+      <div class="requirements-post">
+        <div class="user-info">
+          <img src="./ímg/user.png" alt="">
+          <button class="type-post">public</button>
+          <div class="options-public">
+            <button class="options-public__close-btn">x</button>
+            <p>who can see my post?</p>
+            <form>
+              <label for="public">public</label>
+              <input type="radio" name="type" id="public" value="public" checked>
+              <label for="frinds">friends</label>
+              <input type="radio" name="type" id="friend" value="frinds">
+              <label for="me">me</label>
+              <input type="radio" name="type" id="me" value="solo yo">
+            </form>
+          </div>
+        </div>
+        <p class="p">I am thinking ...</p>
+        <form id="form-post" enctype="multipart/form-data">
+          <textarea id="text-post" placeholder="..."></textarea>
+          <div class="wrappper-inputfile">
+            <label for="file">upload image</label>
+            <input type="file" name="" id="imgFile" multiple>
+          </div>
+          <button id="btn-upload" type="button">send</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="all-post">
+      <h2>post</h2>
+      <div class="all-post-list"></div>
+    </div>
+
+  </div>
+
+  <script src="./bundle.js"></script>
+</body>
+
+</html>

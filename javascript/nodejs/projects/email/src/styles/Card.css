@@ -1,0 +1,63 @@
+body {
+    background: #DDD92A;
+    padding: 0;
+    margin: 0;
+}
+
+#root {
+    margin: 0 auto;
+    width: 60%;
+    padding: 10% 0;
+}
+
+.title {
+    color: #A288E3;
+    font-size: 3.5rem;
+    font-weight: bolder;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    letter-spacing: 5px;
+    text-align: center;
+}
+
+.form-ui {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-ui input {
+    color: white;
+    background: rgba(162, 136, 227, 0.856);
+    border: rgb(192, 189, 41);
+    font-size: 20px;
+    height: 40px;
+    margin: 10px 10px;
+    width: 550px;
+}
+
+.form-ui input::placeholder{
+    background: rgba(162, 136, 227, 0.856);
+    color: white;
+    padding: 10px;
+}
+
+.form-ui textarea {
+    color: white;
+    height: 140px;
+    margin: 10px 10px;
+    width: 550px;
+    background: rgba(162, 136, 227, 0.856);
+    font-size: 20px;
+}
+
+.form-ui textarea::placeholder{
+    color: white;
+    padding: 10px;
+}
+
+.form-ui .send {
+    background: rgba(162, 136, 227, 0.856);
+    width: 150px;
+    font-size: 20px;
+    cursor: pointer;
+}

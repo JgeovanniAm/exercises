@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>jimmy Alvarez banners</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <meta name="ad.size" content="width=300,height=250">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        div {
+            position: absolute;
+            background-repeat: no-repeat !important;
+        }
+        img{
+            position: absolute;
+        }
+
+        #loader {
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+    <script type="text/javascript"> const clickTag = ""; </script>
+</head>
+
+<body>
+    <div id="loader"></div>
+    <div class="banner bannerSize" id="banner" style="display: none">
+        <div id="btnExit" class="bannerSize">
+            <div class="title"></div>
+            <div class="title-shadow"></div>
+            <div class="title-up"></div>
+            <div class="title-up-shadow"></div>
+            <img class= "head" src="./cabeza.png"></img>
+            <div class="bodyAnimal"></div>
+            <div class="background-line"></div>
+            <div class="card"></div>
+            <div class="title-final"></div>
+            <div class="title-final-sombra"></div>
+            <div class="sombraCard"></div>
+            <div class="vaso"></div>
+
+            <div class="roto"></div>
+            <div class="roto2"></div>
+            <div  class="rotowhite"></div>
+            <div class="animal"></div>
+            <div class="shine"></div>
+        </div>
+    </div>
+    <script src="TweenMax.min.js"></script>
+    <script type="text/javascript" src="main.js"></script>
+    <script type="text/javascript">
+        const _btnExit = document.getElementById('btnExit');
+        _btnExit.addEventListener('click', clickTagHandler)
+        function clickTagHandler() { window.open(window.clickTag); }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,87 @@
+//MONGO MANUAL
+///
+////
+
+/** Commands **/
+mongod  / get up my mongod demonio server de mongo
+
+mongo / client 
+ *hay que inciarlas en diferentes terminales 
+
+show dbs/ all my datasB
+
+use nombredb
+  *se pasa a mi database
+
+show db.collections 
+  *me muestra mis collections
+
+db.collection - name
+
+----------------------------------------------------
+
+//CLIENTE mongo
+///
+////
+
+* collect - tablas sql
+* bson documento json pero en formato binario
+* maneja datos heterogenos
+
+// algunos comandos para modificarmi db
+
+/** nombre de collection **/
+
+db.collection.save
+db.collection.insert
+db.collection.findOne
+db.collection.find.pretty format json
+db.collection.remove
+db.collection.drop
+db.collection.rename
+db.collection.count
+
+---------------------------------------------------
+
+/** OPERADORES DE BUSQUED **/
+
+$gt / $gte mayor/mayor o igual
+$lt / $lte menor/menor e igual
+$ne / diferente
+$in / $nin en / no array de valores
+
+----------------------------------------------------
+
+/** Operadores logicos **/
+
+$or / se cumple alguna capsula 
+$and / se cumple todas
+$nor / el resulatdo opuestp
+$not / ninguna
+$type / tipo
+$exist / evaluar
+$regex
+$geoIntersects
+
+----------------------------------------------------
+
+/*Consulta*/
+
+El operador find(..) devuelve un cursor
+
+cursor.count(cb) cantidad de dts
+      .limit(n) limitar n document
+      .skip(n) saltar los n primeros
+      nextobject 
+      each(cb) por data document
+      toArray(cb) convierte el cursor en array
+
+Sort ordenamiento de mis datos
+1 y -1
+
+--------------------------------------------------------
+
+/** conect node js with mongoDB **/
+
+npm install --save mongdb
+require(mongodb).MongoClient

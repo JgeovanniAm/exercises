@@ -1,0 +1,46 @@
+body {
+  margin: 0; }
+
+#conteiner {
+  width: 40%;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 12px; }
+
+#boxchat {
+  width: 90%;
+  height: 400px; }
+
+#datachat {
+  width: 100%;
+  padding: 5px;
+  margin-bottom: 5px;
+  border-bottom: 1px solid black;
+  font-weight: bold;
+  font-family: monospace; }
+
+input[type='text'] {
+  width: 100%;
+  height: 40px;
+  border: 1px solid black;
+  border-radius: 5px;
+  cursor: pointer;
+  resize: none; }
+
+input[type='submit'] {
+  width: 100%;
+  height: 40px;
+  border: 1px solid black;
+  border-radius: 5px;
+  cursor: pointer;
+  resize: none; }
+
+textarea {
+  width: 100%;
+  height: 40px;
+  border: 1px solid black; }
+
+input, textarea {
+  margin-bottom: 3px; }
+
+/*# sourceMappingURL=styles.css.map */

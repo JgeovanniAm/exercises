@@ -1,0 +1,25 @@
+hooks
+
+beforeCreate(){
+
+}
+over of the mounted and I can call API in this function
+created(){
+
+}
+beforeMounted(){
+
+}
+I just only manypulate the DOM
+mounted(){
+
+}
+beforeUpdate(){
+
+}
+update(){
+
+}
+destroy(){
+
+}

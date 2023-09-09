@@ -1,0 +1,67 @@
+* {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@media (min-width: 400px) {
+  .gallery div {
+    flex: 1 0 50%;
+  }
+}
+
+@media (min-width: 600px) {
+  .gallery div {
+    flex: 1 0 33.333%;
+  }
+}
+
+@media (min-width: 800px) {
+  .gallery div {
+    flex: 1 0 25%;
+  }
+}
+
+@media (min-width: 1000px) {
+  .gallery div {
+    flex: 1 0 20%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .gallery div {
+    flex: 1 0 16.66%;
+  }
+}
+
+@media (min-width: 1400px) {
+  .gallery div {
+    flex: 1 0 14.28%;
+  }
+}
+
+@media (min-width: 1600px) {
+  .gallery div {
+    flex: 1 0 11.11%;
+  }
+}
+
+@media (min-width: 1800px) {
+  .gallery div {
+    flex: 1 0 10%;
+  }
+}

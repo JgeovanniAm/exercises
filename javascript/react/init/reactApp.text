@@ -1,0 +1,64 @@
+/** my classes jimmy alvarez **/
+
+//Commads
+/////////
+
+$ nvm install 10.15.3
+$ npx create-react-app "name"
+$ npx create-react-app "name"
+
+//conceptos
+///////////
+
+JSX?
+Es una plantilla de motor y Es la herramienta con la que la comunidad de React nos recomienda 
+escribir componentes dentro de React
+
+props
+Para lograr crear componentes reutilizables 
+
+stade
+estdos de mis componentes que sufre mutuaciones generadas por eventos
+
+ciclos de vida 
+
+*Montado
+    constructor
+    companentWillMount()
+                -modificar estados
+                -No realiar llmados APIs
+                -no realizar suscripcion a eventos
+    render
+                -no se debe modificar el estado
+    companentWillMount()
+                -modificar estados
+                -realiar llmados APIs
+                -realizar suscripcion a eventos
+    companentWillReceiveProps(nextProps)
+                -realizar cambios en los estados en las nuevas  propiedades
+    shouldComponentUpdate(nextProps,nextstate)
+                - valida renderizar o no el companente 
+    companentWillupdate(nextProps,nextstate)
+                -preparacion antes de que se realice o actualice el UI
+    companentDiupdate(prevProps,prevstate)
+
+*Desmontado
+    companentWillUnMount()
+            -dejar de escuchar evetos
+            -cancelar peticiones http
+
+*Error
+    companentDidCatch()
+
+
+///  React Router  ////
+
+Es una collecion de componente de navegacion dinamica
+nos va ayudar en nuestro singlePage
+
+SinglePageApp
+collecion de compoenentes mostrar los componentes que ocupo segun la navegacion
+
+npm i react-router-dom --save
+
+

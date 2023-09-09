@@ -1,0 +1,31 @@
+.space_counter{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+.counter{
+    padding-top: 50px;
+    margin: 0 auto;
+    width: 50%;
+}
+.space_counter{
+    margin: 0 auto;
+    width:55%;
+}
+#number{
+    font-size: 33px;
+}
+.commands{
+    margin: 0 auto;
+    width:60%;
+    padding: 40px;
+}
+#btn{
+    margin-right: 40px;
+    color: whitesmoke;
+    letter-spacing: 4px;
+    font-size: 20px;
+    padding: 5px 15px 5px 15px;
+    border: 0.4px solid whitesmoke;
+    background: none;
+}

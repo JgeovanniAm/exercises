@@ -1,0 +1,15 @@
+v-bind:class
+
+new Vue {
+  el: #myIdhtml,
+  data: {
+    variant: true,
+
+  }
+}
+
+<div id="myIdhtml"> 
+  <p v-bind:class="{variant="title"}">my paragraph</p>
+</div>
+
+https://www.youtube.com/watch?v=4Gh5YcvGDjI&list=PL4cUxeGkcC9gQcYgjhBoeQH7wiAyZNrYa&index=11

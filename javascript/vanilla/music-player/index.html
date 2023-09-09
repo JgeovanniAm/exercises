@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="css/styles.css">
+	<link href="https://fonts.googleapis.com/css?family=Arvo|Quattrocento" rel="stylesheet">
+	<title>Player music JIMMY</title>
+</head>
+<body>
+	<div class="block">
+		<header class="tabsContent">
+			<button class="tabsContent__songs btn-song-js btn-ui">songs</button>
+			<button class="tabsContent__import btn-import-js btn-ui ">import</button>
+		</header>
+		<div class="block__tabs">
+			<section class="main-content">
+				<article class="main-content__songs">
+					<div class="commands">
+						<select class="order-songs" id="order">
+							<option class="artist">artist</option>
+							<option class="sort name">sort name</option>
+							<option class="year">year</option>
+							<option class="album">album</option>
+						</select>
+						<button class="btn-edit btn-ui">edit</button>
+						<button class="btn-remove btn-ui">remove</button>
+						<input type="search" placeHolder='search' class="search-ui" id="input-search">
+					</div>
+					<div class="all-song">
+						<ul id="list-ui" class="all-song__list-song"></ul>
+						<ul id="list-ui" class="all-song__favorite-list"></ul>
+					</div>
+				</article>
+			</section>
+			<section class="import">
+				<form class="form">
+					<label for="name">name</label>
+					<input type="text" id="name">
+					<label for="artist">artist</label>
+					<input type="text" id="artist">
+					<label for="album">album</label>
+					<input type="text" id="album">
+					<label for="image">image</label>
+					<input type="text" id="image">
+					<label for="mp3">mp3</label>
+					<input type="text" id="mp3">
+				</form>
+				<button class="btn-save">save</button>
+			</section>
+		</div>
+		<section class="blockCommands">
+			<div class="details">
+			</div>
+			<div class="buttons-block">
+				<button class="back"><</button> 
+				<button id="stop">||</button>
+				<button class="next">></button>
+			</div>
+			<audio class="music-player" controls="true">
+			</audio>
+		</section>
+	</div>
+	<script src="js/Drop.js"></script>
+	<script src="js/dataSong.js"></script>
+	<script src="js/buildData.js"></script>
+	<script src="js/controls.js"></script>
+</body>
+</html>

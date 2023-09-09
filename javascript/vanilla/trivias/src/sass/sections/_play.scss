@@ -1,0 +1,195 @@
+.wrapper--info--user{
+    grid-column: 1/span 2;
+    grid-row: 1/1;
+    justify-content: center;
+}
+
+.name--user{
+    font-size: 1rem;
+    font-family: 'Courier New', Courier, monospace;
+    @media(min-width: 768px){
+        font-size: 2em;
+    }
+}
+
+
+.level {
+    border-bottom: 2px solid $purple-dark;
+    grid-column: 2/2;
+    display: inline-block;
+    align-self: end;
+    margin: 0 4px;
+    font-size: 1.2rem;
+    font-family: 'Courier New', Courier, monospace
+}
+
+
+//modal about developer and the game
+.wrapper--info-dev{
+    height: 100vh;
+    z-index: 1;
+    padding: 5%;
+    background: $purple-dark;
+    position: fixed;
+    top: 0;
+    bottom: 0; 
+    opacity: 1;
+    @media(min-width: 768px){
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+}
+
+
+
+.info--titles{
+    letter-spacing: 3px;
+    color: $white;
+    @media(min-width: 768px){
+        font-size: 2rem;
+    }
+}
+
+
+.wrapper--info-dev p{
+    font-size: 18px;
+    color: $white;
+    padding: 5px;
+    @media(min-width: 768px){
+        font-size: 2rem;
+        padding: 10px;
+    }
+}
+.close--btn{
+    padding: 10px;
+    height: 50px;
+    border-radius: 100%;
+    width: 50px;
+    background: aquamarine;
+    float: right;
+    @media(min-width: 768px){
+        grid-column: 3;
+        grid-row: 1;
+    }
+}
+//center
+.wrapper--center{
+    grid-column: 1 / span 2; 
+    grid-row: 2/2;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    @media(min-width: 768px){
+        grid-column: 2;
+    }
+}
+
+.img--light{
+    animation: light 1.5s infinite cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    grid-column: 2/3;
+    height: 200px;
+    width: 150px;
+    opacity: 1;
+    transform: scale(0.8);
+}
+
+#btn-play{
+    grid-column: 1/ span 3;
+    width: 90%;
+    margin: 0 auto;
+}
+
+// new questions
+
+.form--questions{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    position: fixed;
+    border: 0;
+    top: 0; 
+    background: $blue-light;
+    z-index: 1;
+    bottom: 0;
+    height: 100vh;
+    padding: 5%;
+}
+.form--questions textarea{
+    text-align: left;
+    border-radius: 8px;
+    box-shadow: 0px 3px 10px 0px rgba(0,0,0,0.53);
+    padding: 4px;
+    @media(min-width: 768px){
+        padding: 10px;
+    }
+}
+
+#question{
+    padding: 4%;
+    grid-row: 2;
+    grid-column: 1 / span 2;
+}
+.close--btn:nth-child(1){
+    margin: 35px 0;
+    grid-column: 2;
+    justify-self: end;
+    padding: 10px;
+    height: 50px;
+    border-radius: 100%;
+    width: 50px;
+    background: $purple-dark;
+    float: right;
+    @media(min-width: 768px){
+        height: 60px;
+        width: 60px;
+        grid-column: 3;
+        grid-row: 1;
+    }
+}
+
+.wrapper--buttons{
+    grid-column: 1/span 2;
+    display: grid;
+    @media(min-width: 768px){
+        grid-column: 1/ span 3;
+    }
+}
+
+#newQ{
+    grid-column: 1;
+    padding: 10px;
+    width: 64px;
+    height: 64px;
+    border-radius: 100%;
+    @media(min-width: 768px){
+        height: 80px;
+        width: 80px;
+    }
+
+}
+
+#infodev{
+    grid-column: 2;
+    float: left;
+    width: 64px;
+    box-shadow: none;
+    height: 64px;
+    background: transparent;
+    padding: 0px;
+    justify-self: end;
+    @media(min-width: 768px){
+        height: 80px;
+        width: 80px;
+    }
+}
+.btn--back{
+    z-index: 2;
+    position: absolute;
+    right: 1pc;
+    top: 10px;
+    display: none;
+    cursor: pointer;
+    img{ 
+        width: 30px;
+        height: 30px;
+    }
+}
